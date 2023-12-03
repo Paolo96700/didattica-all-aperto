@@ -75,15 +75,20 @@
                     class="div_line div_line_two"
                 >
                     <div class="sub_div_line"
-                    @mouseover="mostraMenu(menu.label, menu.width)"
-                    @mouseout="nascondiMenu"
+                   
                     >
                         <div 
                             class="line" 
                             :style="{ width: menu.width }"
+                            @mouseover="setMenuPosition(index); mostraMenu(menu.label, menu.width)"
+                            @mouseout="nascondiMenu"
                         ></div>
                         <div class="rhombus"></div>
-                        <div class="title_menu" @mouseover="setMenuPosition(index)">{{ menu.label }}
+                        <div class="title_menu" 
+                        
+                        >
+                        {{ menu.label }}
+
                         </div>
                     </div>
                     
