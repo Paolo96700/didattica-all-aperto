@@ -19,23 +19,21 @@
         },
         methods: {
             mostraMenu(menuItem) {
-                setTimeout(() => {
+                this.currentMenuItem = menuItem;
+                this.menuTimeout = setTimeout(() => {
                     this.isMenuHidden = false;
                     this.currentMenuItem = menuItem;
-                     // Imposta la larghezza della linea corrente
-                    this.menus.forEach(menu => {
-                        menu.isHovered = menu.label === menuItem;
-                    });
                 }, 1000);
             },
             nascondiMenu() {
-                setTimeout(() => {
+                clearTimeout(this.menuTimeout);
+                this.menuTimeout = setTimeout(() => {
                     this.isMenuHidden = true;
                     this.currentMenuItem = "";
                 }, 1000);
             },
             setMenuPosition(index) {
-            this.menuPosition = this.menus[index].position;
+                this.menuPosition = this.menus[index].position;
             },
         },
     };
@@ -310,7 +308,6 @@
 
 .container_menu{
     width: 100%;
-    margin-top: 250px;
 }
 
 //Menù Option - Line activaction
