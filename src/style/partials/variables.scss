@@ -42,6 +42,8 @@
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.58);
 }
 
+//************************************************//
+
 @mixin staatliches-font-normal-uppercase{
     font-family: Staatliches;
     font-style: normal;
@@ -49,7 +51,9 @@
 }
 
 @mixin work-sans-font-normal-uppercase{
-    
+    font-family: Work Sans;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 

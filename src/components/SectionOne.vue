@@ -53,21 +53,18 @@
 
         color: #F2F2F2;
         text-align: center;
-        font-family: Work Sans;
         font-size: 216px;
-        font-style: normal;
         font-weight: 800;
-        
         line-height: 86%;
         letter-spacing: 2.16px;
-        text-transform: uppercase;
-        
-        
+       
         position: absolute;
         top: 385px;
         left: 148px;
 
         text-shadow: -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black, 3px 3px 0 black;
+
+        @include  work-sans-font-normal-uppercase;
     }
 
 
