@@ -10,7 +10,7 @@
                 },
                 menuPosition: 0,
                 menus: [
-                    { label: '1.stimolazioni sensoriali', position: 0},
+                    { label: '1.stimolazioni sensoriali', position: 0, initialWidth: 20},
                     { label: '2.concentrazione migliorata', position: 1},
                     { label: '3.salute mentale e benessere', position: 2},
                     { label: '4.apprendimento esperienzale', position: 3},
@@ -83,6 +83,7 @@
                     class="div_line div_line_two"
                 >
                     <div class="sub_div_line"
+                            :class="'sub_div_line sub_div_line_' + index"
                             @mouseover="setMenuPosition(index); mostraMenu(menu.label)"
                             @mouseout="nascondiMenu"
                     >
@@ -354,10 +355,28 @@
 }
 
 .sub_div_line:hover .line {
-    width: 40%;
+    width: 50%;
 }
 
+.sub_div_line_0 .line {
+  width: 15%; 
+}
 
+.sub_div_line_1 .line {
+  width: 20%; 
+}
+
+.sub_div_line_2 .line {
+  width: 25%; 
+}
+
+.sub_div_line_3 .line {
+  width: 30%; 
+}
+
+.sub_div_line_4 .line {
+  width: 35%; 
+}
 
 //Menù Option - Rhombus
 
