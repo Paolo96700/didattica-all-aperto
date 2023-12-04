@@ -2,6 +2,7 @@
     export default {
         data() {
             return {
+                isHovered: false,
                 isMenuHidden: true,
                 currentMenuItem: "",
                 menuDescriptions: {
@@ -18,21 +19,26 @@
             };
         },
         methods: {
+            setMenuHover(menuItem) {
+            for (const menu of this.menus) {
+                menu.isHovered = menu.label === menuItem;
+            }
+            },
             mostraMenu(menuItem) {
                 this.currentMenuItem = menuItem;
-                this.menuTimeout = setTimeout(() => {
-                    this.isMenuHidden = false;
-                    this.currentMenuItem = menuItem;
-                }, 1000);
+                this.isMenuHidden = false;
             },
             nascondiMenu() {
-                clearTimeout(this.menuTimeout);
-                this.menuTimeout = setTimeout(() => {
-                    this.isMenuHidden = true;
-                    this.currentMenuItem = "";
-                }, 1000);
+                this.currentMenuItem = "";
+                this.isMenuHidden = true;
             },
             setMenuPosition(index) {
+                const menuLabel = this.menus[index].label;
+
+            if (this.currentMenuItem !== menuLabel) {
+                this.nascondiMenu();
+            }
+
                 this.menuPosition = this.menus[index].position;
             },
         },
@@ -75,12 +81,11 @@
                     class="div_line div_line_two"
                 >
                     <div class="sub_div_line"
-                   
                     >
                         <div 
+                            :class="{ 'line-hover': isHovered }"
                             class="line" 
-                            :style="{ width: menu.width }"
-                            @mouseover="setMenuPosition(index); mostraMenu(menu.label, menu.width)"
+                            @mouseover="setMenuPosition(index); mostraMenu(menu.label)"
                             @mouseout="nascondiMenu"
                         ></div>
                         <div class="rhombus"></div>
@@ -341,7 +346,7 @@
     flex-shrink: 0; 
     stroke-width: 5px;
     color: #FFF;
-    transition: width 1.5s ease;
+    transition: width 0.6s ease;
 }
 
 .line:hover{
@@ -538,7 +543,7 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    line-height: 44px; /* 137.5% */
+    line-height: 44px; 
     letter-spacing: 5.44px;
 }
 
@@ -581,7 +586,7 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    line-height: 44px; /* 137.5% */
+    line-height: 44px;
     letter-spacing: 5.44px;
 
     margin-left: 50px;
