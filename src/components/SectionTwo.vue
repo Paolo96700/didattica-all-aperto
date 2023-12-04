@@ -10,7 +10,7 @@
                 },
                 menuPosition: 0,
                 menus: [
-                    { label: '1.stimolazioni sensoriali', position: 0, isHovered: false},
+                    { label: '1.stimolazioni sensoriali', position: 0},
                     { label: '2.concentrazione migliorata', position: 1},
                     { label: '3.salute mentale e benessere', position: 2},
                     { label: '4.apprendimento esperienzale', position: 3},
@@ -26,7 +26,9 @@
             },
             mostraMenu(menuItem) {
                 this.currentMenuItem = menuItem;
-                this.isMenuHidden = false;
+                setTimeout(() => {
+                    this.isMenuHidden = false;
+                }, 800);
             },
             nascondiMenu() {
                 this.currentMenuItem = "";
@@ -81,12 +83,12 @@
                     class="div_line div_line_two"
                 >
                     <div class="sub_div_line"
+                            @mouseover="setMenuPosition(index); mostraMenu(menu.label)"
+                            @mouseout="nascondiMenu"
                     >
                         <div 
                             :class="{ 'line-hover': isHovered }"
                             class="line" 
-                            @mouseover="setMenuPosition(index); mostraMenu(menu.label)"
-                            @mouseout="nascondiMenu"
                         ></div>
                         <div class="rhombus"></div>
                         <div class="title_menu" 
@@ -334,6 +336,8 @@
 .sub_div_line{
     display: flex;
     align-items: center;
+    height:80px;
+    cursor: pointer;
 }
 
 
@@ -349,7 +353,7 @@
     transition: width 0.6s ease;
 }
 
-.line:hover{
+.sub_div_line:hover .line {
     width: 40%;
 }
 
