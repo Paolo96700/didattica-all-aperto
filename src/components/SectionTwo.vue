@@ -416,20 +416,7 @@
     flex-shrink: 0;
     background: radial-gradient(280.86% 219.74% at 75.46% 228.3%, #86B0D6 0%, #144470 56.26%, #A2CEF6 67.1%, #86B0D6 75.11%, #86B0D6 84.25%, #86B0D6 92.85%, #86B0D6 100%);
 
-    transition: opacity 1s ease, height 0.5s ease;
-
     @include fc;
-}
-
-.menu.active {
-    opacity: 1;
-    height: 666px; 
-}
-
-
-.menu.hidden {
-    display: none;
-    transition: opacity 1s ease, height 0.5s ease;
 }
 
 .menu_img{
