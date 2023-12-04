@@ -10,7 +10,7 @@
                 },
                 menuPosition: 0,
                 menus: [
-                    { label: '1.stimolazioni sensoriali', position: 0, initialWidth: 20},
+                    { label: '1.stimolazioni sensoriali', position: 0},
                     { label: '2.concentrazione migliorata', position: 1},
                     { label: '3.salute mentale e benessere', position: 2},
                     { label: '4.apprendimento esperienzale', position: 3},
@@ -212,7 +212,6 @@
 
 .brand{
     background-color: #FFF;
-    color: #86B0D6;
     font-kerning: none;
     font-size: 66px;
     font-weight: 400;
@@ -223,6 +222,7 @@
     transform: rotate(13deg);
     top: 800px;
     left: -50px;
+    @include lightblue;
     @include staatliches-font-normal-uppercase;
    
 }
@@ -257,7 +257,7 @@
 
     margin-top: 1100px;
 
-    @include ffcc
+    @include flex-column-center
 }
 
 .title_presentation{
@@ -273,7 +273,9 @@
     font-size: 160px;
     font-weight: 400;
     line-height: 98%;
-    @include white-staatliches-font-normal-uppercase;
+
+    color: #FFF;
+    @include staatliches-font-normal-uppercase;
 }
 
 .title_two{
@@ -399,8 +401,9 @@
     font-size: 50px;
     
     font-weight: 700;
-    line-height: 98%; 
-    @include white-normal-uppercase;
+    line-height: 98%;
+    color: #FFF; 
+    @include normal-uppercase;
 
     margin-left:100px
 }
@@ -414,9 +417,9 @@
 
     margin-top: -10px;
     flex-shrink: 0;
-    background: radial-gradient(280.86% 219.74% at 75.46% 228.3%, #86B0D6 0%, #144470 56.26%, #A2CEF6 67.1%, #86B0D6 75.11%, #86B0D6 84.25%, #86B0D6 92.85%, #86B0D6 100%);
-
+    
     @include fc;
+    @include gradient-menu;
 }
 
 .menu_img{
@@ -443,7 +446,8 @@
     line-height: 44px;
     margin: 50px;
 
-    @include white-normal-tauri;
+    color: #FFF;
+    @include normal-tauri;
 }
 
 //Container Card
@@ -501,7 +505,9 @@
     margin-top: 40px;
     margin-inline: 50px;
 
-    @include white-staatliches-font-normal-line-normal;
+    color: #FFF;
+
+    @include staatliches-font-normal-line-normal;
 }
 
 .title_card_two{
@@ -513,7 +519,9 @@
     font-weight: 400;
     letter-spacing: 2.4px;
 
-    @include white-staatliches-font-normal-line-normal
+    color: #FFF;
+
+    @include staatliches-font-normal-line-normal
 }
 
 
@@ -530,7 +538,8 @@
     margin-top: 20px;
     margin-left: 50px;
 
-    @include white-staatliches-font-normal-line-normal
+    color: #FFF;
+    @include staatliches-font-normal-line-normal
 }
 
 

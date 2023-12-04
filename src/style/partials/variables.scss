@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-@mixin ffcc{
+@mixin flex-column-center{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,11 +23,24 @@
 }
 
 
+//Variabili color
+
+@mixin lightblue{
+    color: #86B0D6;
+}
+
+@mixin gradient-menu{
+    background: radial-gradient(280.86% 219.74% at 75.46% 228.3%, #86B0D6 0%, #144470 56.26%, #A2CEF6 67.1%, #86B0D6 75.11%, #86B0D6 84.25%, #86B0D6 92.85%, #86B0D6 100%);
+}
+
+// altre variabili
+
+//Title Part - part three, four, five;
+
 @mixin height-text-shadow{
     height: 83px;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.58);
 }
-
 
 @mixin staatliches-font-normal-uppercase{
     font-family: Staatliches;
@@ -35,27 +48,26 @@
     text-transform: uppercase;
 }
 
-@mixin white-staatliches-font-normal-uppercase{
-    color: #FFF;
-    font-family: Staatliches;
-    font-style: normal;
-    text-transform: uppercase;
-}
-
-@mixin white-staatliches-font-normal-line-normal{
-    color: #FFF;
+@mixin staatliches-font-normal-line-normal{
     font-family: Staatliches;
     font-style: normal;
     line-height: normal;
 }
 
-@mixin white-normal-uppercase{
-    color: #FFF;
+@mixin staatliches-font-normal-line-normal-uppercase{
+   
+    font-family: Staatliches;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+@mixin normal-uppercase{
     font-style: normal;
     text-transform: uppercase;
 }
 
-@mixin white-normal-tauri{
+@mixin normal-tauri{
     color: #FFF;
     font-style: normal;
     font-family: Tauri;
