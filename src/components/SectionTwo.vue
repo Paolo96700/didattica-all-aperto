@@ -354,9 +354,13 @@
     transition: width 0.6s ease;
 }
 
+// Hover Line - si allunga nel momento ci si va sopra con il mouse
+
 .sub_div_line:hover .line {
     width: 50%;
 }
+
+//Lunghezze iniziali delle Line
 
 .sub_div_line_0 .line {
   width: 15%; 
