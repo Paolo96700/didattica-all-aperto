@@ -2,55 +2,37 @@
     export default {
         data() {
             return {
-                isHovered: false,
-                isMenuHidden: true,
-                currentMenuItem: "",
-                menuDescriptions: {
-                    '1.Sviluppo Cognitivo e Creatività': 'La didattica all\'aperto favorisce lo sviluppo cognitivo dei bambini attraverso esperienze sensoriali e attività stimolanti. Le sessioni all\'aperto incoraggiano la creatività, stimolando la mente dei bambini con nuovi stimoli visivi e tattili, promuovendo la risoluzione creativa dei problemi.',
-
-                    '2.Benessere Fisico e Mentale': 'Grazie all\'attività fisica all\'aperto, i bambini migliorano il loro benessere fisico e mentale. L\'aria aperta e l\'esercizio fisico contribuiscono a una migliore salute generale, riducono lo stress e promuovono una mentalità positiva, elementi fondamentali per l\'apprendimento ottimale.',
-
-                    '3.Connessione con la Natura': 'La didattica all\'aperto crea una connessione significativa con la natura. I bambini imparano a rispettare l\'ambiente circostante, sviluppando una consapevolezza ecologica. Questo contribuisce a formare cittadini consapevoli e responsabili del nostro pianeta.',
-
-                    '4.Inclusività e Collaborazione': 'Gli spazi verdi offrono opportunità per attività di gruppo e cooperazione, promuovendo l\'inclusività e lo spirito di squadra. Attraverso giochi e attività all\'aperto, i bambini imparano a collaborare, a rispettare le differenze e a sviluppare competenze sociali fondamentali.',
-
-                    '5.Apprendimento Pratico e Memorizzazione': 'La didattica all\'aperto offre un\'apprendimento pratico che facilita la memorizzazione delle informazioni. Le lezioni immersive e coinvolgenti all\'aperto creano ricordi duraturi, rendendo l\'apprendimento un\'esperienza memorabile e significativa per i bambini.'
-                },
-                menuPosition: 0,
+               
                 menus: [
-                    { label: '1.Sviluppo Cognitivo e Creatività', position: 0},
-                    { label: '2.Benessere Fisico e Mentale', position: 1},
-                    { label: '3.Connessione con la Natura', position: 2},
-                    { label: '4.Inclusività e Collaborazione', position: 3},
-                    { label: '5.Apprendimento Pratico e Memorizzazione', position: 4},
+                    { 
+                        label: '1.Sviluppo Cognitivo e Creatività',
+                        description:  '1.Sviluppo Cognitivo e Creatività: La didattica all\'aperto favorisce lo sviluppo cognitivo dei bambini attraverso esperienze sensoriali e attività stimolanti. Le sessioni all\'aperto incoraggiano la creatività, stimolando la mente dei bambini con nuovi stimoli visivi e tattili, promuovendo la risoluzione creativa dei problemi.',  
+                        position: 0
+                    },
+                    { 
+                        label: '2.Benessere Fisico e Mentale', 
+                        description:'2.Benessere Fisico e Mentale: Grazie all\'attività fisica all\'aperto, i bambini migliorano il loro benessere fisico e mentale. L\'aria aperta e l\'esercizio fisico contribuiscono a una migliore salute generale, riducono lo stress e promuovono una mentalità positiva, elementi fondamentali per l\'apprendimento ottimale.',
+                        position: 1},
+                    { 
+                        label: '3.Connessione con la Natura', 
+                        description:'3.Connessione con la Natura: La didattica all\'aperto crea una connessione significativa con la natura. I bambini imparano a rispettare l\'ambiente circostante, sviluppando una consapevolezza ecologica. Questo contribuisce a formare cittadini consapevoli e responsabili del nostro pianeta.',
+                        position: 2},
+                    { 
+                        label: '4.Inclusività e Collaborazione', 
+                        description:  '4.Inclusività e Collaborazione: Gli spazi verdi offrono opportunità per attività di gruppo e cooperazione, promuovendo l\'inclusività e lo spirito di squadra. Attraverso giochi e attività all\'aperto, i bambini imparano a collaborare, a rispettare le differenze e a sviluppare competenze sociali fondamentali.',
+                        position: 3},
+                    { 
+                        label: '5.Apprendimento Pratico e Memorizzazione',
+                        description: '5.Apprendimento Pratico e Memorizzazione: La didattica all\'aperto offre un\'apprendimento pratico che facilita la memorizzazione delle informazioni. Le lezioni immersive e coinvolgenti all\'aperto creano ricordi duraturi, rendendo l\'apprendimento un\'esperienza memorabile e significativa per i bambini', 
+                        position: 4
+                    },
+
+                    
                 ],
             };
         },
         methods: {
-            setMenuHover(menuItem) {
-            for (const menu of this.menus) {
-                menu.isHovered = menu.label === menuItem;
-            }
-            },
-            mostraMenu(menuItem) {
-                this.currentMenuItem = menuItem;
-                setTimeout(() => {
-                    this.isMenuHidden = false;
-                }, 800);
-            },
-            nascondiMenu() {
-                this.currentMenuItem = "";
-                this.isMenuHidden = true;
-            },
-            setMenuPosition(index) {
-                const menuLabel = this.menus[index].label;
-
-            if (this.currentMenuItem !== menuLabel) {
-                this.nascondiMenu();
-            }
-
-                this.menuPosition = this.menus[index].position;
-            },
+            
         },
     };
 </script>
@@ -97,37 +79,29 @@
                         class="div_line div_line_two"
                     >
                         <div class="sub_div_line"
-                                :class="'sub_div_line sub_div_line_' + index"
-                                @mouseover="setMenuPosition(index); mostraMenu(menu.label)"
-                                @mouseout="nascondiMenu"
-                        >
-                            <div 
-                                :class="{ 'line-hover': isHovered }"
-                                class="line" 
-                            >
+                            :class="'sub_div_line sub_div_line_' + index"
+                        >   
+                            <div class="menu_label">
+                                <div class="line" ></div>
+                                <div class="rhombus"></div>
+                                <div class="title_menu" >
+                                    {{ menu.label }}
+                                </div>
                             </div>
-                            <div class="rhombus"></div>
-                            <div class="title_menu" 
-                            
-                            >
-                                {{ menu.label }}
+                            <div class="menu">
+                                <div class="menu_img">
+                                    <img src="../assets/images/bimbi.png" alt="" />
+                                </div>
+                                <div class="menu_description">
+                                    <div class="description_menu">
+                                    {{ menu.description }}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
 
-                        <div
-                            v-if="!isMenuHidden && currentMenuItem === menu.label"
-                            class="menu"
-                        >
-                            <div class="menu_img">
-                                <img src="../assets/images/bimbi.png" alt="" />
-                            </div>
-                            <div class="menu_description">
-                                <div class="description_menu">
-                                {{ menuDescriptions[currentMenuItem] }}
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
                 
@@ -216,7 +190,7 @@
     //SectionTwo
 
     .section_two{
-        height: 7700px;
+        height: 10500px;
         background-image: url(../assets/images/second_background.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -293,8 +267,6 @@
         @include white;
     }
 
-
-
     .title_two{
         width: 1224px;
         height: 332px;
@@ -302,6 +274,7 @@
         text-align: left;
 
         margin-top: 550px;
+        margin-bottom: 250px;
     }
 
     .title_three{
@@ -309,10 +282,7 @@
         height: 254px;
 
         text-align: left;
-
-        margin-top: 400px;
     }
-
 
     .text_presentation{
         width: 1042px;
@@ -350,27 +320,42 @@
     }
 
     .div_line_two{
-        margin-top:200px;
+        margin-bottom:800px;
     }
 
 
     .sub_div_line{
-        display: flex;
-        align-items: center;
         height:80px;
         cursor: pointer;
+    }
+
+    .menu_label{
+        display: flex;
+        align-items: center;
     }
 
 
     //Menù Option - Line
 
     .line{
-        height: 0px;
         border: 5px solid #FFF;
         flex-shrink: 0; 
         stroke-width: 5px;
         transition: width 0.6s ease;
         @include white;
+    }
+
+    .menu {
+        width: 0;
+        height: 0;
+        flex-shrink: 0;
+        
+        @include flex-center;
+        @include gradient-menu;
+        opacity: 0;
+        
+        overflow: hidden;
+        transition: opacity 0.8s ease, width 0.8s ease, height 0.8s ease;
     }
 
     // Hover Line - si allunga nel momento ci si va sopra con il mouse
@@ -379,6 +364,12 @@
         width: 50%;
     }
 
+    .sub_div_line:hover .menu {
+        opacity: 1;
+        width: 100%;
+        height: 666px;
+    }
+    
     //Lunghezze iniziali delle Line
 
     .sub_div_line_0 .line {
@@ -430,16 +421,6 @@
 
     //Menù Option - Menù
 
-    .menu{
-        width: 100%;
-        height: 666px;
-
-        margin-top: -10px;
-        flex-shrink: 0;
-        
-        @include flex-center;
-        @include gradient-menu;
-    }
 
     .menu_img{
         width: 784px;
