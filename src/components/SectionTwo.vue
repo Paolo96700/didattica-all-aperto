@@ -6,15 +6,25 @@
                 isMenuHidden: true,
                 currentMenuItem: "",
                 menuDescriptions: {
-                    '1.Sviluppo Cognitivo e Creatività': 'La didattica all\'aperto offre un prezioso beneficio di stimolazione sensoriale agli studenti che possono sperimentare in prima persona i concetti appresi, rende l\'istruzione più tangibile e coinvolgente. Inoltre, l\'ambiente esterno offre molteplici opportunità per stimolare la creatività, favorire la concentrazione e migliorare il benessere emotivo, contribuendo così allo sviluppo globale degli studenti.'
+                    '1.Sviluppo Cognitivo e Creatività': 'La didattica all\'aperto favorisce lo sviluppo cognitivo dei bambini attraverso esperienze sensoriali e attività stimolanti. Le sessioni all\'aperto incoraggiano la creatività, stimolando la mente dei bambini con nuovi stimoli visivi e tattili, promuovendo la risoluzione creativa dei problemi.',
+
+                    '2.Benessere Fisico e Mentale': 'Grazie all\'attività fisica all\'aperto, i bambini migliorano il loro benessere fisico e mentale. L\'aria aperta e l\'esercizio fisico contribuiscono a una migliore salute generale, riducono lo stress e promuovono una mentalità positiva, elementi fondamentali per l\'apprendimento ottimale.',
+
+                    '3.Connessione con la Natura': 'La didattica all\'aperto crea una connessione significativa con la natura. I bambini imparano a rispettare l\'ambiente circostante, sviluppando una consapevolezza ecologica. Questo contribuisce a formare cittadini consapevoli e responsabili del nostro pianeta.',
+
+                    '4.Inclusività e Collaborazione': 'Gli spazi verdi offrono opportunità per attività di gruppo e cooperazione, promuovendo l\'inclusività e lo spirito di squadra. Attraverso giochi e attività all\'aperto, i bambini imparano a collaborare, a rispettare le differenze e a sviluppare competenze sociali fondamentali.',
+
+                    '5.Apprendimento Pratico e Memorizzazione': 'La didattica all\'aperto offre un\'apprendimento pratico che facilita la memorizzazione delle informazioni. Le lezioni immersive e coinvolgenti all\'aperto creano ricordi duraturi, rendendo l\'apprendimento un\'esperienza memorabile e significativa per i bambini.'
+
+
                 },
                 menuPosition: 0,
                 menus: [
                     { label: '1.Sviluppo Cognitivo e Creatività', position: 0},
-                    { label: '2.concentrazione migliorata', position: 1},
-                    { label: '3.salute mentale e benessere', position: 2},
-                    { label: '4.apprendimento esperienzale', position: 3},
-                    { label: '5.benefici fisici', position: 4},
+                    { label: '2.Benessere Fisico e Mentale', position: 1},
+                    { label: '3.Connessione con la Natura', position: 2},
+                    { label: '4.Inclusività e Collaborazione', position: 3},
+                    { label: '5.Apprendimento Pratico e Memorizzazione', position: 4},
                 ],
             };
         },
