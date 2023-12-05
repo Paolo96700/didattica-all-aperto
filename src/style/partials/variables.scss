@@ -1,9 +1,9 @@
-@mixin fc{
+@mixin flex-center{
     display: flex;
     align-items: center;
 }
 
-@mixin fcc {
+@mixin flex-center-center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,6 @@
     align-items: center;
 }
 
-
 @mixin font-normal-weight-line{
     font-style: normal;
     font-weight: 400;
@@ -23,19 +22,68 @@
 }
 
 
-//Variabili color
+// Variabili color
+
+@mixin white{
+    color: #FFF;
+}
 
 @mixin lightblue{
     color: #86B0D6;
 }
 
-@mixin gradient-menu{
-    background: radial-gradient(280.86% 219.74% at 75.46% 228.3%, #86B0D6 0%, #144470 56.26%, #A2CEF6 67.1%, #86B0D6 75.11%, #86B0D6 84.25%, #86B0D6 92.85%, #86B0D6 100%);
+@mixin lightblue-two{
+    color: #7694AF;
 }
 
-// altre variabili
 
-//Title Part - part three, four, five;
+// Variabili background
+
+@mixin background-white{
+    background-color: #FFF;
+}
+
+@mixin background-light-blue{
+    background-color:#86B0D6;
+}
+
+@mixin background-blue-night{
+    background: #0F263B;
+}
+
+@mixin background-blue-dark-night{
+    background: #02070B;
+}
+
+@mixin background-dark-blue{
+    background-color: #3B7FBE;
+}
+
+@mixin background-dark-blue-contact{
+    background: #3074CB;
+}
+
+@mixin background-button{
+    background: #23ABD6;
+}
+
+// Variabili gradient
+
+@mixin gradient-menu{
+    background: radial-gradient(280.86% 219.74% at 75.46% 228.3%, #86B0D6 50%, #144470 56.26%, #A2CEF6 67.1%, #86B0D6 75.11%, #86B0D6 84.25%, #86B0D6 92.85%, #86B0D6 100%);
+}
+
+@mixin gradient-card-type-one{
+    background: radial-gradient(238.57% 135.53% at 90.03% 94.18%, #6E97BB 0%, #16D6E1 100%);
+}
+
+@mixin gradient-card-type-two{
+    background: radial-gradient(107.26% 73.15% at 89.18% 78.17%, rgba(136, 214, 174, 0.89) 0%, rgba(65, 168, 174, 0.88) 100%);
+}
+
+// Altre variabili
+
+// Title Part - part three, four, five;
 
 @mixin height-text-shadow{
     height: 83px;
@@ -56,6 +104,7 @@
     text-transform: uppercase;
 }
 
+//************************************************//
 
 @mixin staatliches-font-normal-line-normal{
     font-family: Staatliches;
@@ -81,3 +130,5 @@
     font-style: normal;
     font-family: Tauri;
 }
+
+//************************************************//

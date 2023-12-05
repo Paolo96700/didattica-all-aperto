@@ -6,20 +6,13 @@
     <section class="section_one">
         <img src="../assets/images/logo.png" alt="" class="logo">
         <div class="title_jumbo">
-           didattica all'aperto
+            <img src="../assets/images/Intersect.png" alt="" class="intersect">
+            <div class="part_title_one">didattica</div>
+            <div class="part_title_two">all<div class="apostrofo">,</div></div>  <div class="part_title_three">aperto</div>
         </div>
-        <img src="../assets/images/bimbo.png" alt="" class="image_child">
+        <!-- <img src="../assets/images/bimbo.png" alt="" class="image_child"> -->
         <div class="description_jumbo one">
-            ai bambini serve
-        </div>
-        <div class="description_jumbo two">
-            molto più che una
-        </div>
-        <div class="description_jumbo three">
-            classe chiusa tra
-        </div>
-        <div class="description_jumbo four">
-            4 pareti...
+            esplora il futuro dell’apprendimento
         </div>
     </section>
 </template>
@@ -52,35 +45,64 @@
         flex-shrink: 0;
 
         color: #F2F2F2;
+
         text-align: center;
+        font-family: Work Sans;
         font-size: 216px;
+        font-style: normal;
         font-weight: 800;
-        line-height: 86%;
+        line-height: 86.016%;
         letter-spacing: 2.16px;
+        text-transform: uppercase;
        
+        position: relative;
         position: absolute;
-        top: 385px;
-        left: 148px;
+        top: 425px;
+        left: 300px;
+    }
 
-        text-shadow: -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black, 3px 3px 0 black;
+    .part_title_one{
+        position: absolute;
+        left: 110px;
+    }
 
-        @include  work-sans-font-normal-uppercase;
+    .part_title_two{
+        position: absolute;
+        top:185px;
+    }
+
+    .part_title_three{
+        position: absolute;
+        top:185px;
+        left:508px;
+    }
+
+    .apostrofo{
+        position: absolute;
+        top: -108px;
+        left: 384px;
+    }
+
+    .intersect{
+        width: 1417.758px;
+        height: 357.065px;
+
+        position: absolute;
+        top: 10px;
+        right: 30px;
     }
 
 
+    // .image_child{
+    //     width: 530px;
+    //     height: 405px;
 
-    .image_child{
-        width: 530px;
-        height: 405px;
-
-        position: absolute;
-        bottom: 540px;
-        right: 170px;
-    }
+    //     position: absolute;
+    //     bottom: 540px;
+    //     right: 170px;
+    // }
 
     .description_jumbo{
-        color: #FFF;
-
         text-align: right;
         text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.81);
         font-size: 70px;
@@ -88,48 +110,17 @@
         line-height: normal;
     
         @include staatliches-font-normal-uppercase;
+        @include white;
     }
 
     .one{
-        width: 706px;
-        height: 137px;
-        flex-shrink: 0;
-
-        position: absolute;
-        left: 551px;
-        top: 868px;
-    }
-
-    .two{
-        width: 924px;
-        height: 109px;
-        flex-shrink: 0;
-
-        position: absolute;
-        left: 407px;
-        top: 1005px;
-    }
-
-    .three{
-        width: 817px;
+        width: 560px;
         height: 110px;
         flex-shrink: 0;
 
         position: absolute;
-        right: 70px;
-        bottom: 370px;
-        left: 749px;
-        top: 1131px;
-    }
-
-    .four{
-        width: 817px;
-        height: 110px;
-        flex-shrink: 0;
-
-        position: absolute;
-        left: 749px;
-        top: 1241px;
+        left: 1390px;
+        top: 1075px;
     }
 
 </style>

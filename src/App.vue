@@ -2,6 +2,7 @@
   import SectionOne from './components/SectionOne.vue';
   import SectionTwo from './components/SectionTwo.vue';
   import SectionThree from './components/SectionThree.vue';
+  import AppFooter from './components/AppFooter.vue';
 
   export default{
     data() {
@@ -13,6 +14,7 @@
       SectionOne,
       SectionTwo,
       SectionThree,
+      AppFooter,
     }
   }
 </script>
@@ -22,7 +24,13 @@
     <SectionOne />
     <SectionTwo />
     <SectionThree/>
+
+    
   </div>
+  <div class="footer_container">
+    <AppFooter />
+  </div>
+  
 </template>
 
 <style>
