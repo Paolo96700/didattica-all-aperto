@@ -12,15 +12,18 @@
                     { 
                         label: '2.Benessere Fisico e Mentale', 
                         description:'2.Benessere Fisico e Mentale: Grazie all\'attività fisica all\'aperto, i bambini migliorano il loro benessere fisico e mentale. L\'aria aperta e l\'esercizio fisico contribuiscono a una migliore salute generale, riducono lo stress e promuovono una mentalità positiva, elementi fondamentali per l\'apprendimento ottimale.',
-                        position: 1},
+                        position: 1
+                    },
                     { 
                         label: '3.Connessione con la Natura', 
                         description:'3.Connessione con la Natura: La didattica all\'aperto crea una connessione significativa con la natura. I bambini imparano a rispettare l\'ambiente circostante, sviluppando una consapevolezza ecologica. Questo contribuisce a formare cittadini consapevoli e responsabili del nostro pianeta.',
-                        position: 2},
+                        position: 2
+                    },
                     { 
                         label: '4.Inclusività e Collaborazione', 
                         description:  '4.Inclusività e Collaborazione: Gli spazi verdi offrono opportunità per attività di gruppo e cooperazione, promuovendo l\'inclusività e lo spirito di squadra. Attraverso giochi e attività all\'aperto, i bambini imparano a collaborare, a rispettare le differenze e a sviluppare competenze sociali fondamentali.',
-                        position: 3},
+                        position: 3
+                    },
                     { 
                         label: '5.Apprendimento Pratico e Memorizzazione',
                         description: '5.Apprendimento Pratico e Memorizzazione: La didattica all\'aperto offre un\'apprendimento pratico che facilita la memorizzazione delle informazioni. Le lezioni immersive e coinvolgenti all\'aperto creano ricordi duraturi, rendendo l\'apprendimento un\'esperienza memorabile e significativa per i bambini', 
@@ -79,7 +82,7 @@
                         class="div_line div_line_two"
                     >
                         <div class="sub_div_line"
-                            :class="'sub_div_line sub_div_line_' + index"
+                        :class="'sub_div_line sub_div_line_' + index"
                         >   
                             <div class="menu_label">
                                 <div class="line" ></div>
@@ -94,7 +97,7 @@
                                 </div>
                                 <div class="menu_description">
                                     <div class="description_menu">
-                                    {{ menu.description }}
+                                        {{ menu.description }}
                                     </div>
                                 </div>
                             </div>
@@ -105,11 +108,6 @@
                     </div>
                 </div>
                 
-                
-                <div class="title_presentation title_three">
-                    scopri i nostri prodotti
-                </div>
-
                 <div class="container_card">
                     <div class="card type_one">
                         <div class="title_card title_card_one">
@@ -190,14 +188,13 @@
     //SectionTwo
 
     .section_two{
-        height: 10500px;
         background-image: url(../assets/images/second_background.png);
         background-repeat: no-repeat;
         background-size: cover;
         top: -820px;
         position: relative;
         overflow: hidden;
-        z-index: 10;
+  
     }
 
 
@@ -277,13 +274,6 @@
         margin-bottom: 250px;
     }
 
-    .title_three{
-        width: 1432px;
-        height: 254px;
-
-        text-align: left;
-    }
-
     .text_presentation{
         width: 1042px;
         height: 480px;
@@ -311,39 +301,74 @@
 
     .container_menu{
         width: 100%;
+        .div_line{
+            width: 100%;
+            .sub_div_line{
+                height:80px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                .menu_label{
+                    display: flex;
+                    align-items: center;
+                    .line{
+                        border: 5px solid #FFF;
+                        flex-shrink: 0; 
+                        stroke-width: 5px;
+                        transition: width 0.6s ease;
+                        @include white;
+                    }
+                    .rhombus {
+                        width: 25px;
+                        height: 25px;
+                        
+                        transform: rotate(45deg);
+                        @include background-white;
+                    }
+                    .title_menu{
+                        font-family: Sintony;
+                        font-size: 50px;
+                        
+                        font-weight: 700;
+                        line-height: 98%; 
+                    
+                        margin-left:100px;
+
+                        @include normal-uppercase;
+                        @include white;
+                    }
+
+                }
+            }
+        }
+        .div_line_two{
+        margin-bottom:300px;
+    }
     }
 
-    //Menù Option - Line activaction
+    //Lunghezze iniziali delle Line
 
-    .div_line{
-        width: 100%;
+       .sub_div_line_0 .line {
+        width: 15%; 
     }
 
-    .div_line_two{
-        margin-bottom:800px;
+    .sub_div_line_1 .line {
+        width: 20%; 
     }
 
-
-    .sub_div_line{
-        height:80px;
-        cursor: pointer;
+    .sub_div_line_2 .line {
+        width: 25%; 
     }
 
-    .menu_label{
-        display: flex;
-        align-items: center;
+    .sub_div_line_3 .line {
+        width: 30%; 
     }
 
+    .sub_div_line_4 .line {
+        width: 35%; 
+    }
 
     //Menù Option - Line
-
-    .line{
-        border: 5px solid #FFF;
-        flex-shrink: 0; 
-        stroke-width: 5px;
-        transition: width 0.6s ease;
-        @include white;
-    }
 
     .menu {
         width: 0;
@@ -370,57 +395,7 @@
         height: 666px;
     }
     
-    //Lunghezze iniziali delle Line
-
-    .sub_div_line_0 .line {
-    width: 15%; 
-    }
-
-    .sub_div_line_1 .line {
-    width: 20%; 
-    }
-
-    .sub_div_line_2 .line {
-    width: 25%; 
-    }
-
-    .sub_div_line_3 .line {
-    width: 30%; 
-    }
-
-    .sub_div_line_4 .line {
-    width: 35%; 
-    }
-
-    //Menù Option - Rhombus
-
-    .rhombus {
-        width: 25px;
-        height: 25px;
-        
-        transform: rotate(45deg);
-        @include background-white;
-    }
-
-
-    //Menù Option - Title menù
-
-    .title_menu{
-        font-family: Sintony;
-        font-size: 50px;
-        
-        font-weight: 700;
-        line-height: 98%; 
-    
-        margin-left:100px;
-
-        @include normal-uppercase;
-        @include white;
-    }
-
-
-    //Menù Option - Menù
-
+ 
 
     .menu_img{
         width: 784px;

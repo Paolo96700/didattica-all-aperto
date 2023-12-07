@@ -619,6 +619,7 @@
 .container_contact{
     display: flex;
     margin-top: 180px;
+    margin-bottom: 600px ;
 }
 
 .container_contact_one{

@@ -22,19 +22,19 @@ body{
 //App 
 
 .container{
-    width: 2000px;
-    height: 18400px;
+    width: 100%;
+
     margin: auto;
     position: relative;
 
     z-index: 10;
 
     @include background-dark-blue;
-    border: 10px solid #3B7FBE;
+    // border: 10px solid #3B7FBE;
 }
 
 .footer_container{
-    width: 2020px;
+    width: 100%;
     margin: auto;
 }
 
