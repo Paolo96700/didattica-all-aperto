@@ -23,12 +23,9 @@ body{
 
 .container{
     width: 100%;
-
     margin: auto;
     position: relative;
-
-    z-index: 10;
-
+    max-width: 2200px;
     @include background-dark-blue;
     // border: 10px solid #3B7FBE;
 }

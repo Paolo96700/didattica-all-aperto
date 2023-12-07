@@ -50,11 +50,14 @@
     @import '../style/partials/variables.scss';
 
     .container_footer{
+        
         width: 100%;
         height: 347px;
+        max-width: 2200px;
         display: flex;
         align-items: center;
-
+        
+        margin: auto;
         @include background-blue-night;
     }
 

@@ -2,6 +2,7 @@
   import SectionOne from './components/SectionOne.vue';
   import SectionTwo from './components/SectionTwo.vue';
   import SectionThree from './components/SectionThree.vue';
+  import SectionFour from'./components/SectionFour.vue';
   import AppFooter from './components/AppFooter.vue';
 
   export default{
@@ -14,6 +15,7 @@
       SectionOne,
       SectionTwo,
       SectionThree,
+      SectionFour,
       AppFooter,
     }
   }
@@ -24,8 +26,7 @@
     <SectionOne />
     <SectionTwo />
     <SectionThree/>
-
-    
+    <SectionFour/>
   </div>
   <div class="footer_container">
     <AppFooter />
