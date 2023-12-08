@@ -21,7 +21,11 @@
     <div class="part_section_three">
         <img src="../assets/images/eclipse.png" alt="" class="eclipse5">
         <p class="sub_title sub_part_three">tribunette</p>
+        <img src="../assets/images/triangle_dark_blue.png" alt="" class="triangle">
     </div>
+
+   
+
     <div class="info">
         <div class="title_info">
             offriamo soluzioni su misura
@@ -167,20 +171,30 @@
 
         </div>
     </div>
-
   </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 @import '../style/partials/variables.scss';
-    
+
+.section_four{
+    z-index:10;
+}
+ 
 // Section Four- Part One
 
 .part_section_one{
     width: 100%;
-    height: 1249px;
+    aspect-ratio: 1.38;
+
     flex-shrink: 0;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+
     background-image: url(../assets/images/back1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,33 +202,43 @@
     border-bottom: 10px solid white;
     position: relative;
     overflow: hidden;
-}
 
+    .title_image{
+        width: 100%;
+        aspect-ratio: 6;
+        
+        text-shadow: 10px 10px 30px #000;
+        font-family: Staatliches;
+        font-size: 160px;
 
+        background: rgba(0, 0, 0, 0.28);
+        backdrop-filter: blur(3.60px);
 
-.title_image{
-    width: 100%;
-    height: 305px;
-    flex-shrink: 0;
-    color: #FFF;
-    
-    text-shadow: 10px 10px 30px #000;
-    font-family: Staatliches;
-    font-size: 160px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 98%;
-    text-transform: uppercase; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute;
+        top: 285px;
 
-    background: rgba(0, 0, 0, 0.28);
-    backdrop-filter: blur(3.60px);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    position: absolute;
-    top: 285px;
+        z-index: 10;
+    }
+    .eclipse{
+        width: 41px;
+        height: 41px;
+        flex-shrink: 0;
+        position: absolute;
+        top: 895px;
+        left: 220px;
+    }
+    .eclipse2{
+        width: 41px;
+        height: 41px;
+        flex-shrink: 0;
+        position: absolute;
+        top: 1100px;
+        left: 1050px;
+    }
 }
 
 .sub_title{
@@ -223,39 +247,21 @@
     text-shadow: 5px 5px 12px #000;
     font-family: Sansita;
     font-size: 74px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 98.125%;
     text-transform: uppercase;
-
+    
     position: absolute;
     bottom:-40px;
     right:140px;
 }
 
-.eclipse{
-    width: 41px;
-    height: 41px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 895px;
-    left: 220px;
-}
 
-.eclipse2{
-    width: 41px;
-    height: 41px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 1100px;
-    left: 1050px;
-}
+
 
 // Section Three - Part Two
 
 .part_section_two{
     width: 100%;
-    height: 966px;
+    aspect-ratio: 2.25;
     flex-shrink: 0;
     background-image: url(../assets/images/back2.png);
     background-repeat: no-repeat;
@@ -266,28 +272,28 @@
     border-bottom: 10px solid white;
 
     position: relative;
-}
+    
+    .eclipse3{
+        width: 41px;
+        height: 41px;
+        flex-shrink: 0;
+        position: absolute;
+        top: 275px;
+        left: 450px;
+    }
 
-.sub_part_two{
-    right: 360px;
-}
-
-.eclipse3{
-    width: 41px;
-    height: 41px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 275px;
-    left: 400px;
-}
-
-.eclipse4{
-    width: 41px;
-    height: 41px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 200px;
-    left: 840px;
+    .eclipse4{
+        width: 41px;
+        height: 41px;
+        flex-shrink: 0;
+        position: absolute;
+        top: 200px;
+        left: 920px;
+    }
+    
+    .sub_part_two{  
+        right: 360px;
+    }
 }
 
 // Section Three - Part Three
@@ -305,23 +311,29 @@
 
     position: relative;
 
+    .eclipse5{
+        width: 41px;
+        height: 41px;
+        flex-shrink: 0;
+        position: absolute;
+        top: 600px;
+        left: 940px;
+    }
+    .sub_part_three{
+        bottom: 110px;
+        right: 270px;
+    }
+
+
 }
 
-
-
-.sub_part_three{
-    bottom: 110px;
-    right: 270px;
-}
-
-
-.eclipse5{
-    width: 41px;
-    height: 41px;
-    flex-shrink: 0;
+.triangle{
     position: absolute;
-    top: 600px;
-    left: 940px;
+    width: 100.5%;
+    bottom: 0;
+    margin-left: -5px;
+    margin-bottom: -2px;
+    z-index: 11;
 }
 
 // Section Three - Container Contact
