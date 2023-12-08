@@ -86,7 +86,7 @@
                             </div>
                             <div class="menu">
                                 <div class="menu_img">
-                                    <img src="../assets/images/bimbi.png" alt="" />
+                                    <img src="../assets/images/bimbi.png" alt="" class="img_menu">
                                 </div>
                                 <div class="menu_description">
                                     <div class="description_menu">
@@ -347,5 +347,66 @@
         width: 100%;
         height: 666px;
     }
-    
+
+
+    //Media Query
+    @media only screen and (max-width: 1024px) {
+        
+        // IL BRAND
+
+        .title_presentation{
+            font-size: 100px !important;
+        }
+        .text_presentation{
+            font-size: 24px !important;
+        }
+
+        //PERCHE E IMPORTANTE PER I BAMBINI?
+
+        .div_line{
+            margin-bottom:100px !important;
+        }
+
+        .line{
+            border: 3px solid #FFF !important; 
+        }
+
+        .rhombus{
+            width: 15px;
+            height: 15px;
+            margin-left: -10px;
+        }
+
+        .sub_div_line:hover .menu {
+            opacity: 1;
+            width: 100%;
+            height: 266px;
+        }
+
+        .title_menu{
+            font-size: 24px !important;
+        }
+
+       
+        .menu_img{
+            width: 350px !important;
+            height: 100% !important;
+        } 
+        .img_menu{
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .menu_description{
+            height: 100% !important;
+            padding: 30px !important;
+        }
+        .description_menu{
+            font-size: 14px !important;
+            padding: 30px !important;
+        }
+        
+
+        // SCOPRI I NOSTRI PRODOTTI
+    }
 </style>

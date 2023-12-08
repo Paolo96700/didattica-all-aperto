@@ -337,4 +337,44 @@
         z-index: 11;
     }
 
+    @media only screen and (max-width: 1024px) {
+        
+        // SCOPRI I NOSTRI PRODOTTI
+
+        .title_presentation{
+            font-size: 100px !important;
+        }
+
+        .type_one{
+            width: 580px;
+            aspect-ratio: 1;
+           
+        }
+
+        .type_two{
+            width: 580px;
+            aspect-ratio: 1;
+        }
+
+        .title_part{
+            font-size: 75px;
+        }
+
+        .description_one{
+            font-size: 26px !important;
+        }
+        .description_two{
+            font-size: 26px !important;
+        }
+
+        .description_three{
+            font-size: 26px !important;
+        }
+
+        .description_four{
+            font-size: 26px !important;
+        }
+       
+    }
+
 </style>

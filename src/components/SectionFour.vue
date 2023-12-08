@@ -56,8 +56,8 @@
             </div>
         </div>
         <div class="type_contact">
-            <div>
-                <span>come preferisci essere contattato?</span>
+            <div class="text_contact">
+                <span>Come preferisci essere contattato?</span>
             </div>
             <div class="container_input_radio">
                 <span><input type="radio" class="input_radio">Email </span>
@@ -106,8 +106,8 @@
                         </div>
                     </div>
                     <div class="type_contact type_contact_one prefer_contact">
-                        <span class="contact_one">come preferisci essere contattato?</span>
-                        <div class="container_input_radio contact_two">
+                        <span class="text_contact_two">Come preferisci essere contattato?</span>
+                        <div class="container_input_radio container_input_radio_two">
                             <span><input type="radio" class="input_radio">Email </span>
                             <span><input type="radio" class="input_radio">Telefono</span>
                         </div>
@@ -454,7 +454,10 @@
 //****************************************************************/
 
 .type_contact{
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
 
     font-family: Tauri;
@@ -466,15 +469,18 @@
     margin-top: 70px;
 
     @include white;
-    .container_input_radio{
-        
 
+    .text_contact{
+        margin-right:150px;
+    }
+    .container_input_radio{
+       
         .input_radio{
             width: 18px;
             height: 18px;
             margin-right: 10px;
             fill: rgba(217, 217, 217, 0.00);
-
+            
             stroke-width: 2px;
             stroke: #FFF;
         }
@@ -605,6 +611,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 50px;
 
     margin-top: 180px;
   
@@ -649,7 +656,7 @@
         border: 5px solid #FFF;
         box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
-        margin-top: 20px;
+        margin-top: 30px;
 
         display: flex;
         flex-direction: column;
@@ -693,20 +700,19 @@
     @include background-dark-blue-contact;
 }
 
-.type_contact_one{
-    margin-top: 0px;
-}
 
-.contact_one{
-    margin-left: 70px;
+.text_contact_two{
+   width: 70%; 
 }
 
 .prefer_contact{
+    width: 85%;
     margin-top: 20px;
 }
 
-.contact_two{
-    margin-left: 30px;
+.container_input_radio_two{
+    width: 30%; 
+    margin-left: 0px;
 
     display: flex;
     flex-direction: column;
@@ -720,7 +726,6 @@
 }
 
 .inputGroup textarea {
-
     width: 80%;
     aspect-ratio: 1.2;
 
@@ -771,9 +776,6 @@
 }
 
 //*******************************************************************/
-
-
-
 
 .sub_container_one{
     display: flex;
@@ -841,7 +843,7 @@
 }
 
 .sub_map{
-    width: 80%;
+    width: 90%;
     height: 400px;
     flex-shrink: 0;
 

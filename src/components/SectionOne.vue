@@ -88,8 +88,11 @@
     
         @include staatliches-font-normal-uppercase;
         @include white;
+
+        
     }
 
+    
     .brand{
         width: 250%;
         font-kerning: none;
@@ -130,4 +133,19 @@
     }
 
     //******************************************/
+
+
+    //Media Query
+    @media only screen and (max-width: 1024px) {
+
+        .sub_title_jumbo{
+            margin-top:150px;
+            font-size: 40px;
+        }
+
+        .brand{
+            font-size:40px
+        }
+    }
+
 </style>
