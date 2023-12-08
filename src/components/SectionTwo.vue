@@ -405,8 +405,73 @@
             font-size: 14px !important;
             padding: 30px !important;
         }
-        
+    
+    }
 
-        // SCOPRI I NOSTRI PRODOTTI
+    //Media Query
+    @media only screen and (max-width: 864px) {
+        
+        // IL BRAND
+        .title_presentation{
+            font-size: 90px !important;
+        }
+        .text_presentation{
+            width: 80% !important;
+            font-size: 22px !important;
+        }
+
+        .title_two{
+            margin-top: 50px !important;
+            margin-bottom: 150px !important;
+        }
+        //PERCHE E IMPORTANTE PER I BAMBINI?
+
+        .div_line{
+            margin-bottom:100px !important;
+        }
+
+        .line{
+            border: 3px solid #FFF !important; 
+        }
+
+        .rhombus{
+            width: 50%;
+            height: 50%;
+            margin-left: -10px;
+        }
+
+        .sub_div_line:hover .menu {
+            opacity: 1;
+            width: 100%;
+            height: 266px;
+        }
+
+        .title_menu{
+            font-size: 22px !important;
+        }
+
+       
+        .menu_img{
+            width: 350px !important;
+            height: 100% !important;
+        } 
+        .img_menu{
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .menu_description{
+            width: 80%;
+            height: 100% !important;
+            padding: 30px !important;
+            display: flex;
+            align-items: center;
+        }
+        .description_menu{
+            padding: 0 !important;
+            font-size: 14px !important;
+            line-height: 30px !important;
+        }
+    
     }
 </style>

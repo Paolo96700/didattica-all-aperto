@@ -377,4 +377,62 @@
        
     }
 
+    @media only screen and (max-width: 864px) {
+        
+        // SCOPRI I NOSTRI PRODOTTI
+
+        .title_presentation{
+            font-size: 100px !important;
+        }
+
+        .type_one{
+            width: 550px;
+            aspect-ratio: 0.8;
+           
+        }
+
+        .type_two{
+            width: 550px;
+            aspect-ratio: 1;
+        }
+
+        
+        .title_card_one{
+            font-size: 50px !important;
+        }
+        .title_part{
+            font-size: 60px;
+        }
+        .title_card_three{
+            font-size: 60px !important;
+        }
+        .title_card_four{
+            font-size: 50px !important;
+        }
+
+        .img_trees{
+            margin-top: -40px;
+        }
+
+        .description_one{
+            padding: 40px !important;
+            width: 90% !important;
+            font-size: 22px !important;
+        }
+        .description_two{
+            width: 85% !important;
+            font-size: 22px !important;
+        }
+
+        .description_three{
+           
+            font-size: 22px !important;
+        }
+
+        .description_four{
+            font-size: 22px !important;
+        }
+       
+    }
+
 </style>
