@@ -163,7 +163,7 @@
                         </div>
                     </div>
                     <div class="sub_map">
-                        <img src="../assets/images/map.png" alt="">
+                        <img src="../assets/images/map.png" alt="" class="map">
                     </div>
                   
                 </div>
@@ -398,7 +398,7 @@
     margin-right: 110px;  
     .inputGroup {
         margin: 1em 0 1em 0;
-        width: 326px;
+        width: 90%;
 
         position: relative;
     }  
@@ -467,7 +467,7 @@
 
     @include white;
     .container_input_radio{
-        margin-left: 150px;
+        
 
         .input_radio{
             width: 18px;
@@ -610,7 +610,7 @@
   
     margin-bottom: 600px;
     .container_contact_one{
-        width: 90%;
+        width: 643px;
         flex-shrink: 0; 
         display: flex;
         flex-direction: column;
@@ -622,6 +622,38 @@
         box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
         margin-bottom: 20px;
+
+        @include background-dark-blue-contact;
+    }
+    .container_contact_two{
+        width: 806px;
+        height: 427px;
+        flex-shrink: 0;
+        border-radius: 49px;
+        border: 5px solid #FFF;
+    
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include background-dark-blue-contact;
+    }
+    .container_contact_three{
+        width: 806px;
+        height: 681px;
+        flex-shrink: 0;
+
+        border-radius: 49px;
+        border: 5px solid #FFF;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+        margin-top: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         @include background-dark-blue-contact;
     }
@@ -666,7 +698,6 @@
 }
 
 .contact_one{
-   
     margin-left: 70px;
 }
 
@@ -742,23 +773,7 @@
 //*******************************************************************/
 
 
-.container_contact_two{
-    width: 90%;
-    height: 427px;
-    flex-shrink: 0;
-    border-radius: 49px;
-    border: 5px solid #FFF;
-  
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-left: 50px;
-
-    @include background-dark-blue-contact;
-}
 
 .sub_container_one{
     display: flex;
@@ -810,24 +825,7 @@
     justify-content: space-between;
 }
 
-.container_contact_three{
-    width: 90%;
-    height: 681px;
-    flex-shrink: 0;
 
-    border-radius: 49px;
-    border: 5px solid #FFF;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
-
-    margin-top: 20px;
-    margin-left: 50px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @include background-dark-blue-contact;
-}
 
 .title_map{
     margin-top: 50px;
@@ -843,7 +841,7 @@
 }
 
 .sub_map{
-
+    width: 80%;
     height: 400px;
     flex-shrink: 0;
 
@@ -852,6 +850,11 @@
     border-radius: 23px;
     border: 6px solid #3074CB;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
 }
 
 </style>
