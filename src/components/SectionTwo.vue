@@ -357,6 +357,13 @@
         .title_presentation{
             font-size: 100px !important;
         }
+
+        .title_two{
+            width: 80%;
+            padding-left: 120px !important;
+            margin-top: 40px !important;
+            margin-bottom: 150px !important;
+        }
         .text_presentation{
             font-size: 24px !important;
         }
@@ -413,15 +420,18 @@
         
         // IL BRAND
         .title_presentation{
-            font-size: 90px !important;
+            width: 90%;
+            font-size: 70px !important;
         }
         .text_presentation{
-            width: 80% !important;
+            width: 70% !important;
             font-size: 22px !important;
         }
 
         .title_two{
-            margin-top: 50px !important;
+            width: 70%;
+            padding-left: 120px !important;
+            margin-top: 40px !important;
             margin-bottom: 150px !important;
         }
         //PERCHE E IMPORTANTE PER I BAMBINI?
@@ -450,7 +460,6 @@
             font-size: 22px !important;
         }
 
-       
         .menu_img{
             width: 350px !important;
             height: 100% !important;

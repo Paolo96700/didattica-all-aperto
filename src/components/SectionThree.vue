@@ -346,29 +346,45 @@
         }
 
         .type_one{
-            width: 580px;
-            aspect-ratio: 1;
+            width: 600px;
+            aspect-ratio: 0.7;
            
         }
 
         .type_two{
-            width: 580px;
-            aspect-ratio: 1;
+            width: 600px;
+            aspect-ratio: 0.7;
+        }
+
+        .card_two{
+            margin-top:80px;
         }
 
         .title_part{
             font-size: 75px;
+        }
+        .title_card_one{
+            font-size: 50px !important;
+        }
+        .title_part{
+            font-size: 60px;
+        }
+        .title_card_three{
+            font-size: 60px !important;
+        }
+        .title_card_four{
+            font-size: 50px !important;
         }
 
         .description_one{
             font-size: 26px !important;
         }
         .description_two{
-            font-size: 26px !important;
+            font-size: 24px !important;
         }
 
         .description_three{
-            font-size: 26px !important;
+            font-size: 22px !important;
         }
 
         .description_four{
@@ -381,14 +397,20 @@
         
         // SCOPRI I NOSTRI PRODOTTI
 
+        .section_three{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .title_presentation{
-            font-size: 100px !important;
+            text-align: center;
+            width: 70%;
+            font-size: 70px !important;
         }
 
         .type_one{
-            width: 550px;
+            width: 540px;
             aspect-ratio: 0.8;
-           
         }
 
         .type_two{
@@ -396,12 +418,18 @@
             aspect-ratio: 1;
         }
 
+        .card_two{
+            margin-top:80px;
+        }
         
         .title_card_one{
             font-size: 50px !important;
         }
         .title_part{
             font-size: 60px;
+        }
+        .part_two{
+            font-size: 160px;
         }
         .title_card_three{
             font-size: 60px !important;
@@ -416,8 +444,9 @@
 
         .description_one{
             padding: 40px !important;
-            width: 90% !important;
+            width: 80% !important;
             font-size: 22px !important;
+            line-height: 35px !important;
         }
         .description_two{
             width: 85% !important;
@@ -425,12 +454,13 @@
         }
 
         .description_three{
-           
+           margin-top: 70px;
             font-size: 22px !important;
         }
 
         .description_four{
             font-size: 22px !important;
+            line-height: 35px !important;
         }
        
     }
