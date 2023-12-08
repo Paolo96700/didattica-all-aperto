@@ -85,7 +85,7 @@
 
         <div class="container_contact">
             <div class="container_contact_one">
-                <div class="title_contact_one">Scrivici un messaggio</div>
+                <div class="title_contact">Scrivici un messaggio</div>
                 <div class="container_input_two">
                     <div class="input input_contact">
                         <div class="inputGroup">
@@ -123,7 +123,7 @@
             </div>
             <div>
                 <div class="container_contact_two">
-                    <div class="title_contact_one">I nostri contatti</div>
+                    <div class="title_contact">I nostri contatti</div>
                     <div class="sub_container_one">
                         <div class="sub_one">
                             <div class="row_container">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 <div class="container_contact_three">
-                    <div class="title_contact_one title_map">dove trovarci</div>
+                    <div class="title_contact title_map">dove trovarci</div>
 
                     <div class="sub_three">
                         <div class="row_container">
@@ -182,7 +182,7 @@
     z-index:10;
 }
  
-// Section Four- Part One
+// Section Four - Part One
 
 .part_section_one{
     width: 100%;
@@ -257,7 +257,7 @@
 
 
 
-// Section Three - Part Two
+// Section Four - Part Two
 
 .part_section_two{
     width: 100%;
@@ -272,6 +272,7 @@
     border-bottom: 10px solid white;
 
     position: relative;
+    overflow: hidden;
     
     .eclipse3{
         width: 41px;
@@ -296,7 +297,7 @@
     }
 }
 
-// Section Three - Part Three
+// Section Four - Part Three
 
 .part_section_three{
     width: 100%;
@@ -336,7 +337,7 @@
     z-index: 11;
 }
 
-// Section Three - Container Contact
+// Section Four - Container Contact
 
 .info{
     display: flex;
@@ -346,8 +347,7 @@
 }
 
 .title_info{
-    width: 1214px;
-    height: 334px;
+    width: 65%;
     flex-shrink: 0;
 
     text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.35);
@@ -365,8 +365,7 @@
 }
 
 .description_info{
-    width: 1322px;
-    height: 91px;
+    width: 70%;
     flex-shrink: 0;
 
     font-family: Tauri;
@@ -384,68 +383,72 @@
 //*************************** input ******************************/
 
 .container_input{
+    width: 100%;
     margin-top: 70px;
     position: relative;
 
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+// Imput - Container Input
 
 .input{
-    margin-right: 110px;    
-}
+    margin-right: 110px;  
+    .inputGroup {
+        margin: 1em 0 1em 0;
+        width: 326px;
 
-.inputGroup {
-    margin: 1em 0 1em 0;
-    width: 326px;
+        position: relative;
+    }  
 
-    position: relative;
-}
+    .inputGroup input {
+        padding: 1.0em;
+        padding-inline: 2em;
+        outline: none;
+        border: 5px solid #FFF;
+        background-color: transparent;
+        border-radius: 106px;
+        width: 100%;
 
-.inputGroup input {
-    padding: 1.0em;
-    padding-inline: 2em;
-    outline: none;
-    border: 5px solid #FFF;
-    background-color: transparent;
-    border-radius: 106px;
-    width: 100%;
+        font-family: Tauri;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
 
-    font-family: Tauri;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
+        @include white
+    }
 
-    @include white
-}
+    .inputGroup label {
+        font-size: 100%;
+        position: absolute;
+        top:25px;
+        left: 20px;
+        font-size: 20px;
+        padding-inline:0.5em;
+        font-family: Staatliches;
+        font-weight: 400;
 
-.inputGroup label {
-    font-size: 100%;
-    position: absolute;
-    top:25px;
-    left: 20px;
-    font-size: 20px;
-    padding-inline:0.5em;
-    font-family: Staatliches;
-    font-weight: 400;
+        margin-left: 0.5em;
+        pointer-events: none;
 
-    margin-left: 0.5em;
-    pointer-events: none;
+        transition: all 0.3s ease;
 
-    transition: all 0.3s ease;
+        @include white
+    }
 
-    @include white
-}
+    .inputGroup :is(input:focus, input:valid)~label {
+        transform: translateY(-50%) scale(.9);
+        top:5px;
+        margin: 0em;
+        margin-left: 1.2em;
+        @include background-dark-blue;
+    }
 
-.inputGroup :is(input:focus, input:valid)~label {
-    transform: translateY(-50%) scale(.9);
-    top:5px;
-    margin: 0em;
-    margin-left: 1.2em;
-    @include background-dark-blue;
-}
-
-.inputGroup :is(input:focus, input:valid) {
-    border-color:#FFF;
+    .inputGroup :is(input:focus, input:valid) {
+        border-color:#FFF;
+    }
 }
 
 //****************************************************************/
@@ -462,22 +465,22 @@
 
     margin-top: 70px;
 
-    @include white
+    @include white;
+    .container_input_radio{
+        margin-left: 150px;
+
+        .input_radio{
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            fill: rgba(217, 217, 217, 0.00);
+
+            stroke-width: 2px;
+            stroke: #FFF;
+        }
+    }
 }
 
-.container_input_radio{
-    margin-left: 150px;
-}
-
-.input_radio{
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
-    fill: rgba(217, 217, 217, 0.00);
-
-    stroke-width: 2px;
-    stroke: #FFF;
-}
 
 .accept_conditions{
     display: flex;
@@ -498,9 +501,9 @@
 //***************************checkbox ******************************/
 
 .checkbox-wrapper-23 *,
-  .checkbox-wrapper-23 *:after,
-  .checkbox-wrapper-23 *:before {
-  box-sizing: border-box;
+.checkbox-wrapper-23 *:after,
+.checkbox-wrapper-23 *:before {
+    box-sizing: border-box;
 }
 
 .checkbox-wrapper-23 input {
@@ -556,8 +559,6 @@
 
 
 .send{
-    width: 284px;
-    height: 72px;
     flex-shrink: 0;
     border-radius: 106px;
 
@@ -573,14 +574,15 @@
 
     margin-top:20px;
 
+    padding: 10px 80px 10px 80px;
+
     @include white;
     @include background-button;
 }
   
 
 .title_contact{
-    width: 639px;
-    height: 158px;
+    width: 100%;
     flex-shrink: 0;
 
     text-shadow: 10px 10px 30px rgba(0, 0, 0, 0.50);
@@ -594,34 +596,40 @@
     margin-top: 400px;
 
     @include white;
+
+    display: flex;
+    justify-content: center;
 }
 
 .container_contact{
     display: flex;
-    margin-top: 180px;
-    margin-bottom: 600px ;
-}
-
-.container_contact_one{
-    width: 643px;
-    height: 1134px;
-    flex-shrink: 0; 
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    
-    border-radius: 49px;
-    border: 5px solid #FFF;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
-    @include background-dark-blue-contact;
+    margin-top: 180px;
+  
+    margin-bottom: 600px;
+    .container_contact_one{
+        width: 90%;
+        flex-shrink: 0; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        border-radius: 49px;
+        border: 5px solid #FFF;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+        margin-bottom: 20px;
+
+        @include background-dark-blue-contact;
+    }
 }
 
-.title_contact_one{
-    width: 433px;
-    height: 59px;
+
+
+.title_contact{
     flex-shrink: 0;
 
     text-shadow: 10px 10px 27px rgba(0, 0, 0, 0.30);
@@ -658,7 +666,7 @@
 }
 
 .contact_one{
-    width: 218px;
+   
     margin-left: 70px;
 }
 
@@ -667,7 +675,6 @@
 }
 
 .contact_two{
-    width: 218px;
     margin-left: 30px;
 
     display: flex;
@@ -682,10 +689,10 @@
 }
 
 .inputGroup textarea {
-    width: 396px;
-    height: 281.461px;
-   
-    
+
+    width: 80%;
+    aspect-ratio: 1.2;
+
     padding: 1.0em;
     padding-inline: 2em;
     outline: none;
@@ -736,7 +743,7 @@
 
 
 .container_contact_two{
-    width: 806px;
+    width: 90%;
     height: 427px;
     flex-shrink: 0;
     border-radius: 49px;
@@ -804,7 +811,7 @@
 }
 
 .container_contact_three{
-    width: 806px;
+    width: 90%;
     height: 681px;
     flex-shrink: 0;
 
@@ -836,9 +843,11 @@
 }
 
 .sub_map{
-    width: 718px;
+
     height: 400px;
     flex-shrink: 0;
+
+    margin-inline: 20px;
 
     border-radius: 23px;
     border: 6px solid #3074CB;

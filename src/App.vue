@@ -29,7 +29,7 @@
     <SectionFour/>
   </div>
   <div class="footer_container">
-    <AppFooter />
+    <!-- <AppFooter /> -->
   </div>
   
 </template>
