@@ -32,7 +32,7 @@
         </div>
         <div class="description_info">
             <p>
-                Ogni scuola merita di essere unica ed originale. Progettare intere aree didattiche è il nostro lavoro da più di vent'anni, fornendo soluzioni perfette per ogni esigenza.Hai un'idea da realizzare? Parliamone!
+                Ogni scuola merita di essere unica ed originale. Progettare intere aree didattiche è il nostro lavoro da più di vent'anni, fornendo soluzioni perfette per ogni esigenza. Hai un'idea da realizzare? Parliamone!
             </p>
         </div>
         <div class="container_input">
@@ -79,13 +79,13 @@
             invia
         </button>
 
-        <div class="title_contact">
+        <div class="title_contact title_contact_principal">
             Contattaci
         </div>
 
         <div class="container_contact">
             <div class="container_contact_one">
-                <div class="title_contact title_contact_one ours_contact">Scrivici un messaggio</div>
+                <div class="title_contact title_contact_one">Scrivici un messaggio</div>
                 <div class="container_input_two">
                     <div class="input input_contact">
                         <div class="inputGroup">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 <div class="sub_container_contact_two ">
-                    <div class="title_contact title_contact_one title_map">dove trovarci</div>
+                    <div class="title_contact title_contact_one">dove trovarci</div>
 
                     <div class="sub_three">
                         <div class="row_container">
@@ -474,7 +474,6 @@
         margin-right:150px;
     }
     .container_input_radio{
-       
         .input_radio{
             width: 18px;
             height: 18px;
@@ -599,14 +598,15 @@
     line-height: 98%;
     text-transform: uppercase;
 
-    margin-top: 400px;
-
     @include white;
 
     display: flex;
     justify-content: center;
 }
 
+.title_contact_principal{
+    margin-top: 400px;
+}
 
 .container_contact{
     display: flex;
@@ -652,7 +652,7 @@
     }
     .sub_container_contact_two{
         width: 806px;
-        height: 681px;
+        aspect-ratio: 1.5;
         flex-shrink: 0;
 
         border-radius: 49px;
@@ -672,14 +672,9 @@
 
 
 .title_contact_one{
+    margin-top: 30px;
     font-size: 50px;
-    margin-top: 50px;
 }
-
-.ours_contact{
-    margin-top: 0px;
-}
-
 
 .container_input_two{ 
     width: 100%;
@@ -824,37 +819,30 @@
     justify-content: space-between;
 }
 
+.sub_container_contact_two{
+    padding-bottom: 30px;
 
-
-.title_map{
-    margin-top: 50px;
+    .sub_three{
+        display: flex;
+        margin-top: 20px;
+    }
+    .row_two{
+        margin-left: 90px;
+    }
+    .sub_map{
+        width: 90%;
+        aspect-ratio: 1.8 !important;
+        flex-shrink: 0;
+        border-radius: 23px;
+        border: 6px solid #3074CB;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        .map{
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
-.sub_three{
-    display: flex;
-    margin-top: 20px;
-}
-
-.row_two{
-    margin-left: 90px;
-}
-
-.sub_map{
-    width: 90%;
-    height: 400px;
-    flex-shrink: 0;
-
-    margin-inline: 20px;
-
-    border-radius: 23px;
-    border: 6px solid #3074CB;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-}
-
-.map{
-    width: 100%;
-    height: 100%;
-}
 
 @media only screen and (max-width: 1024px) {
         
@@ -1015,13 +1003,13 @@
 
     .title_info{
         width: 80%;
-        font-size: 90px !important;
+        font-size: 85px !important;
     }
 
     .description_info{
-        width: 90%;
-        font-size: 22px !important;
-        padding-left: 50px !important;
+        width: 95%;
+        font-size: 18px !important;
+        padding-left: 10px !important;
     }
 
     .container_input{
@@ -1038,7 +1026,7 @@
     }
     
     .title_contact{
-        font-size: 100px !important;
+        font-size: 85px !important;
     }
 
     .container_contact_one{
@@ -1062,7 +1050,7 @@
     }
 
     .prefer_contact{
-        width: 80%;
+        width: 90%;
         margin-left: 10px;
     }
 
@@ -1079,7 +1067,7 @@
 
     .sub_container_contact_one{
        width: 60% !important;
-       padding: 10px;
+       padding: 35px;
        .subtitle{
             font-size: 25px !important;
         }
@@ -1088,8 +1076,6 @@
     .sub_one{
         width: 60% !important;
         margin: 0;
-        
-        
     }
 
     
@@ -1104,7 +1090,8 @@
     }
 
     .sub_container_contact_two{
-       width: 80% !important;
+       width: 70% !important;
+       aspect-ratio: 1.18;
         .subtitle{
             font-size: 25px !important;
         }
@@ -1115,7 +1102,8 @@
             margin-left: 130px !important;
         }
         .sub_map{
-        width: 90%;
+            width: 90% !important;
+            aspect-ratio: 1.8 !important;
         }
     }
 }
