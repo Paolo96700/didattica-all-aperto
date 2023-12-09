@@ -85,7 +85,7 @@
 
         <div class="container_contact">
             <div class="container_contact_one">
-                <div class="title_contact">Scrivici un messaggio</div>
+                <div class="title_contact title_contact_one ours_contact">Scrivici un messaggio</div>
                 <div class="container_input_two">
                     <div class="input input_contact">
                         <div class="inputGroup">
@@ -121,9 +121,9 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="container_contact_two">
-                    <div class="title_contact">I nostri contatti</div>
+            <div class="container_contact_two">
+                <div class="sub_container_contact_one">
+                    <div class="title_contact title_contact_one ">I nostri contatti</div>
                     <div class="sub_container_one">
                         <div class="sub_one">
                             <div class="row_container">
@@ -149,8 +149,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="container_contact_three">
-                    <div class="title_contact title_map">dove trovarci</div>
+                <div class="sub_container_contact_two ">
+                    <div class="title_contact title_contact_one title_map">dove trovarci</div>
 
                     <div class="sub_three">
                         <div class="row_container">
@@ -301,7 +301,7 @@
 
 .part_section_three{
     width: 100%;
-    height: 1075px;
+    aspect-ratio: 1.8;
     flex-shrink: 0;
     background-image: url(../assets/images/back3.png);
     background-repeat: no-repeat;
@@ -383,19 +383,19 @@
 //*************************** input ******************************/
 
 .container_input{
-    width: 100%;
+    width: 65%;
     margin-top: 70px;
+    margin-right: 90px;
     position: relative;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-between
 }
 
 // Imput - Container Input
 
-.input{
-    margin-right: 110px;  
+.input{ 
     .inputGroup {
         margin: 1em 0 1em 0;
         width: 90%;
@@ -607,6 +607,7 @@
     justify-content: center;
 }
 
+
 .container_contact{
     display: flex;
     flex-wrap: wrap;
@@ -632,7 +633,9 @@
 
         @include background-dark-blue-contact;
     }
-    .container_contact_two{
+
+
+    .sub_container_contact_one{
         width: 806px;
         height: 427px;
         flex-shrink: 0;
@@ -647,7 +650,7 @@
 
         @include background-dark-blue-contact;
     }
-    .container_contact_three{
+    .sub_container_contact_two{
         width: 806px;
         height: 681px;
         flex-shrink: 0;
@@ -668,46 +671,40 @@
 
 
 
-.title_contact{
-    flex-shrink: 0;
-
-    text-shadow: 10px 10px 27px rgba(0, 0, 0, 0.30);
-    font-family: Staatliches;
+.title_contact_one{
     font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 98.125%;
-    text-transform: uppercase;
-
-    margin-top: 40px;
-
-    @include white;
-    @include flex-center-center;
+    margin-top: 50px;
 }
 
+.ours_contact{
+    margin-top: 0px;
+}
+
+
 .container_input_two{ 
+    width: 100%;
     margin-top: 50px;
 
     @include flex-column-center
 }
 
 .input_contact{
-    margin-left: 30px;
+   margin-right: 45px;
     margin-top: 20px;
 }
 
-.inputGroup :is(input:focus, input:valid)~.label_contact{
-    @include background-dark-blue-contact;
+.inputGroup input:is(input:focus, input:valid)~.label_contact{
+    @include background-dark-blue-contact
 }
-
 
 .text_contact_two{
    width: 70%; 
 }
 
 .prefer_contact{
-    width: 85%;
+    width: 60%;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .container_input_radio_two{
@@ -858,5 +855,270 @@
     width: 100%;
     height: 100%;
 }
+
+@media only screen and (max-width: 1024px) {
+        
+    // SHOWROOM
+
+    .title_image{
+        top: 165px !important;
+        font-size: 100px !important;
+        aspect-ratio: 7.5 !important;
+    }
+
+    .sub_title{
+        right: 55px !important;
+        font-size: 45px !important;
+    }
+
+    .eclipse{
+        width: 20px !important;
+        height: 20px !important;
+        top: 460px !important;
+        left: 120px !important;
+    }
+
+    .eclipse2{
+        width: 20px !important;
+        height: 20px !important;
+        top: 600px !important;
+        left: 580px !important;
+    }
+
+    .sub_part_two{
+        bottom: -40px !important;
+        right: 170px !important;
+    }
+
+    .eclipse3{
+        width: 20px !important;
+        height: 20px !important;
+        top: 150px !important;
+        left: 210px !important;
+    }
+
+    .eclipse4{
+        width: 20px !important;
+        height: 20px !important;
+        top: 120px !important;
+        left: 430px !important;
+    }
+
+   
+
+    .eclipse5{
+        width: 20px !important;
+        height: 20px !important;
+        top: 250px !important;
+        left: 480px !important;
+    }
+
+    .sub_part_three{
+        bottom: 60px !important;
+        right: 120px !important;
+    }
+
+    
+
+    .title_info{
+        width: 70%;
+        font-size: 100px !important;
+    }
+
+    .description_info{
+        width: 90%;
+        font-size: 22px !important;
+        padding-left: 50px !important;
+    }
+
+    .container_input{
+        width: 50%;
+    }
+
+    .container_input{
+        justify-content: center;
+    }
+
+    
+    .title_contact{
+        font-size: 100px !important;
+    }
+
+    .title_contact_one{
+        margin-top: 40px;
+        font-size: 50px !important;
+    }
+       
+}
+
+    @media only screen and (max-width: 864px) {
+        
+        // SHOWROOM
+
+    .title_image{
+        top: 125px !important;
+        font-size: 80px !important;
+        aspect-ratio: 7.5 !important;
+    }
+
+    .sub_title{
+        right: 55px !important;
+        bottom: -30px !important;
+        font-size: 35px !important;
+    }
+
+    .eclipse{
+        width: 20px !important;
+        height: 20px !important;
+        top: 360px !important;
+        left: 90px !important;
+    }
+
+    .eclipse2{
+        width: 20px !important;
+        height: 20px !important;
+        top: 450px !important;
+        left: 420px !important;
+    }
+     
+    .sub_part_two{
+        bottom: -30px !important;
+        right: 160px !important;
+    }
+    
+    .eclipse3{
+        width: 20px !important;
+        height: 20px !important;
+        top: 110px !important;
+        left: 160px !important;
+    }
+
+    .eclipse4{
+        width: 20px !important;
+        height: 20px !important;
+        top: 90px !important;
+        left: 330px !important;
+    }
+
+    .sub_part_three{
+        bottom: 40px !important;
+        right: 120px !important;
+    }
+
+    .eclipse5{
+        width: 20px !important;
+        height: 20px !important;
+        top: 230px !important;
+        left: 410px !important;
+    }
+
+
+    .title_info{
+        width: 80%;
+        font-size: 90px !important;
+    }
+
+    .description_info{
+        width: 90%;
+        font-size: 22px !important;
+        padding-left: 50px !important;
+    }
+
+    .container_input{
+        margin-right: 30px;
+        width: 50%;
+    }
+
+    .container_input{
+        justify-content: center;
+    }
+
+    .send{
+        margin-left:15px;
+    }
+    
+    .title_contact{
+        font-size: 100px !important;
+    }
+
+    .container_contact_one{
+        width: 60% !important;
+    }
+
+    .title_contact_one{
+        margin-top: 40px;
+        font-size: 30px !important;
+    }
+
+    .input_contact{
+        margin-right: 10px;
+    }
+
+    .inputGroup{
+        width: 90% !important;
+    }
+    .input .inputGroup input{
+        padding: 1em !important;
+    }
+
+    .prefer_contact{
+        width: 80%;
+        margin-left: 10px;
+    }
+
+    .inputGroup textarea{
+        padding: 1.1em !important;
+    }
+    
+    .container_contact_two{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub_container_contact_one{
+       width: 60% !important;
+       padding: 10px;
+       .subtitle{
+            font-size: 25px !important;
+        }
+    }
+
+    .sub_one{
+        width: 60% !important;
+        margin: 0;
+        
+        
+    }
+
+    
+    .sub_two{
+        margin: 0 !important;
+        margin-top: 120px !important;
+        width: 40%;
+    }
+
+    .container_social img{
+        width: 40px;
+    }
+
+    .sub_container_contact_two{
+       width: 80% !important;
+        .subtitle{
+            font-size: 25px !important;
+        }
+        .sub_three{
+            width: 90%;
+        }
+        .row_two{
+            margin-left: 130px !important;
+        }
+        .sub_map{
+        width: 90%;
+        }
+    }
+}
+
 
 </style>

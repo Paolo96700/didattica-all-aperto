@@ -349,7 +349,8 @@
     }
 
 
-    //Media Query
+    //Media Query - 1024px
+
     @media only screen and (max-width: 1024px) {
         
         // IL BRAND
@@ -412,10 +413,13 @@
             font-size: 14px !important;
             padding: 30px !important;
         }
-    
+
     }
 
-    //Media Query
+
+
+    //Media Query - 864px
+
     @media only screen and (max-width: 864px) {
         
         // IL BRAND

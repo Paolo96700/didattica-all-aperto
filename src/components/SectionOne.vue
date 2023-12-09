@@ -138,14 +138,39 @@
     //Media Query
     @media only screen and (max-width: 1024px) {
 
+            .sub_title_jumbo{
+                margin-top:150px;
+                font-size: 40px;
+            }
+
+            .brand{
+                font-size:40px
+            }
+
+            @keyframes moveText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    }
+
+    //Media Query
+    @media only screen and (max-width: 864px) {
+
         .sub_title_jumbo{
             margin-top:150px;
-            font-size: 40px;
+            font-size: 30px;
         }
 
         .brand{
-            font-size:40px
+            width: 250% !important;
+            font-size:22px;
         }
+
+       
     }
 
 </style>
