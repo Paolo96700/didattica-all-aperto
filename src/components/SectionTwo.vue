@@ -356,7 +356,7 @@
         // IL BRAND
 
         .title_presentation{
-            font-size: 100px !important;
+            font-size: 110px !important;
         }
 
         .title_two{
@@ -425,11 +425,11 @@
         // IL BRAND
         .title_presentation{
             width: 90%;
-            font-size: 70px !important;
+            font-size: 85px !important;
         }
         .text_presentation{
             width: 70% !important;
-            font-size: 22px !important;
+            font-size: 20px !important;
         }
 
         .title_two{
