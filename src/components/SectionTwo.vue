@@ -426,11 +426,17 @@
         .title_presentation{
             width: 90%;
             font-size: 85px !important;
+            margin-bottom: 120px !important;
         }
         .text_presentation{
             width: 70% !important;
-            font-size: 20px !important;
+            font-size: 18px !important;
         }
+
+        .highlight{
+            font-size: 21px !important;
+        }
+
 
         .title_two{
             width: 70%;
