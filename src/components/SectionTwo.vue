@@ -431,16 +431,17 @@
         .text_presentation{
             width: 70% !important;
             font-size: 18px !important;
+            .highlight{
+                font-size: 22px !important;
+            }
         }
 
-        .highlight{
-            font-size: 21px !important;
-        }
+        
 
 
         .title_two{
-            width: 70%;
-            padding-left: 120px !important;
+            width: 90%;
+            padding-left: 65px !important;
             margin-top: 40px !important;
             margin-bottom: 150px !important;
         }
@@ -448,22 +449,19 @@
 
         .div_line{
             margin-bottom:100px !important;
-        }
-
-        .line{
-            border: 3px solid #FFF !important; 
-        }
-
-        .rhombus{
-            width: 50%;
-            height: 50%;
-            margin-left: -10px;
-        }
-
-        .sub_div_line:hover .menu {
-            opacity: 1;
-            width: 100%;
-            height: 266px;
+            .line{
+                border: 3px solid #FFF !important; 
+            }
+            .rhombus{
+                width: 50%;
+                height: 50%;
+                margin-left: -10px;
+            }
+            .sub_div_line:hover .menu {
+                opacity: 1;
+                width: 100%;
+                height: 266px;
+            }
         }
 
         .title_menu{
@@ -471,26 +469,28 @@
         }
 
         .menu_img{
-            width: 350px !important;
+            width: 300px !important;
             height: 100% !important;
+            .img_menu{
+                width: 100% !important;
+                height: 100% !important;
+            }
         } 
-        .img_menu{
-            width: 100% !important;
-            height: 100% !important;
-        }
+        
 
         .menu_description{
             width: 80%;
             height: 100% !important;
-            padding: 30px !important;
+            padding: 40px !important;
             display: flex;
             align-items: center;
+            .description_menu{
+                padding: 0 !important;
+                font-size: 14px !important;
+                line-height: 30px !important;
+            }
         }
-        .description_menu{
-            padding: 0 !important;
-            font-size: 14px !important;
-            line-height: 30px !important;
-        }
+        
     
     }
 </style>
