@@ -951,7 +951,7 @@
 
     .sub_title{
         right: 55px !important;
-        bottom: -30px !important;
+        bottom: 5px !important;
         font-size: 35px !important;
     }
 
@@ -970,7 +970,7 @@
     }
      
     .sub_part_two{
-        bottom: -30px !important;
+        bottom: 5px !important;
         right: 160px !important;
     }
     
@@ -989,7 +989,7 @@
     }
 
     .sub_part_three{
-        bottom: 40px !important;
+        bottom: 80px !important;
         right: 120px !important;
     }
 
