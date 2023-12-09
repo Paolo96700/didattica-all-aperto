@@ -405,7 +405,7 @@
         .title_presentation{
             text-align: center;
             width: 70%;
-            font-size: 70px !important;
+            font-size: 85px !important;
         }
 
         .type_one{
