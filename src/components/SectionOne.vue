@@ -167,7 +167,7 @@
 
         .brand{
             width: 260% !important;
-            font-size:20px;
+            font-size:22px;
         }
 
        
