@@ -436,15 +436,13 @@
             }
         }
 
-        
-
-
         .title_two{
             width: 90%;
             padding-left: 65px !important;
             margin-top: 40px !important;
             margin-bottom: 150px !important;
         }
+        
         //PERCHE E IMPORTANTE PER I BAMBINI?
 
         .div_line{
