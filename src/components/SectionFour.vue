@@ -856,6 +856,7 @@
 
     .sub_title{
         right: 55px !important;
+        bottom: 5px !important;
         font-size: 45px !important;
     }
 
@@ -874,7 +875,7 @@
     }
 
     .sub_part_two{
-        bottom: -40px !important;
+        bottom: 5px !important;
         right: 170px !important;
     }
 
@@ -892,8 +893,6 @@
         left: 430px !important;
     }
 
-   
-
     .eclipse5{
         width: 20px !important;
         height: 20px !important;
@@ -902,7 +901,7 @@
     }
 
     .sub_part_three{
-        bottom: 60px !important;
+        bottom: 90px !important;
         right: 120px !important;
     }
 
