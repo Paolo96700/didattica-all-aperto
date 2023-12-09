@@ -164,14 +164,19 @@
     }
 
     @media only screen and (max-width: 864px) {
-        .title_footer{
-            font-size: 22px !important;
-        }
+        .sub_container_footer_two{
+            margin-top: -30px;
+            .title_footer{
+                font-size: 22px !important;
+            }
+            .sub_title_footer{
+                font-size: 16px !important;
+            }
 
-        .sub_title_footer{
-            font-size: 16px !important;
         }
         
+        
+
         .span_footer{
             font-size: 6px !important;
         }
