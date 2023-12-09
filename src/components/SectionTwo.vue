@@ -453,24 +453,53 @@
                 border: 3px solid #FFF !important; 
             }
             .rhombus{
-                width: 50%;
-                height: 50%;
+                width: 2% !important;
+                height: 2% !important;
                 margin-left: -10px;
             }
-            .sub_div_line:hover .menu {
-                opacity: 1;
-                width: 100%;
-                height: 266px;
+            .title_menu{
+                font-size: 22px !important;
+                margin-left: 45px !important;
             }
         }
 
-        .title_menu{
-            font-size: 22px !important;
+        .sub_div_line_0 .line {
+            width: 5%; 
         }
 
+        .sub_div_line_1 .line {
+            width: 10%; 
+        }
+
+        .sub_div_line_2 .line {
+            width: 15%; 
+        }
+
+        .sub_div_line_3 .line {
+            width: 20%; 
+        }
+
+        .sub_div_line_4 .line {
+            width: 25%; 
+        }
+
+        // Hover Line - si allunga nel momento ci si va sopra con il mouse
+
+        .sub_div_line:hover .line {
+            width: 32%;
+        }
+
+        .sub_div_line:hover .menu {
+            opacity: 1;
+            width: 100%;
+            height: 266px;
+        }
+
+       
+
         .menu_img{
-            width: 300px !important;
-            height: 100% !important;
+            width: 280px !important;
+            height: 80% !important;
             .img_menu{
                 width: 100% !important;
                 height: 100% !important;
