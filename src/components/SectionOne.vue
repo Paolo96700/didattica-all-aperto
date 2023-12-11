@@ -36,83 +36,61 @@
         background-image: url(../assets/images/jumbo.png);
         background-repeat: no-repeat;
         background-size: cover;
+        text-transform: uppercase;
+        @include white;
         
         overflow: hidden;
         .container_one{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
             padding-top: 50px;
             padding-inline:50px;
+
+            @include flex-center-center-column;
+            .logo{
+                align-self: self-start;
+                width: 15%;
+                aspect-ratio: 1;
+            }
+            .title{
+                width: 80%;
+                aspect-ratio: 3.4;
+                flex-shrink: 0;
+            }
+            .sub_title_jumbo{
+                width: 30%;
+                aspect-ratio: 3.8;
+
+                text-align: right;
+                text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+                font-size: 50px;
+                align-self: self-end;
+                font-family: Staatliches;
+
+                margin-top:250px;
+            }
+        }
+        .triangle{
+            width: 170%;
+            padding:0;
+            margin: 0;
+        }
+        .brand{
+            width: 250%;
+            font-size: 50px;
+            letter-spacing: 17px;
+            transform: rotate(13deg);
+
+            font-family: Staatliches;
+            font-style: normal;
+            text-transform: uppercase;
+
+            margin: -50px 0px -60px -100px;
+
+            @include lightblue;
+            @include background-white;
+            z-index: 10;
         }
     }
 
-   
-    .triangle{
-        width: 170%;
-        padding:0;
-        margin: 0;
-    }
-
-
-    //SectionOne - jumbo
-
-    .logo{
-        align-self: self-start;
-        width: 15%;
-        aspect-ratio: 1;
-    }
-
-    .title{
-        width: 80%;
-        aspect-ratio: 3.4;
-        flex-shrink: 0;
-    }
-
-    .sub_title_jumbo{
-        width: 40%;
-        aspect-ratio: 3.8;
-
-        flex-shrink: 0;
-        align-self: self-end;
-
-        text-align: right;
-        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.81);
-        font-size: 70px;
-        font-weight: 400;
-        line-height: normal;
-        align-self: self-end;
-
-        margin-top:450px;
-    
-        @include staatliches-font-normal-uppercase;
-        @include white;
-
-        
-    }
-
-    
-    .brand{
-        width: 250%;
-        font-kerning: none;
-        font-size: 66px;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 17.16px;
-        white-space: nowrap;
-        transform: rotate(13deg);
-
-        margin-top:-120px;
-        margin-bottom: 25px;
-        margin-left: -300px; 
-     
-        @include lightblue;
-        @include background-white;
-        @include staatliches-font-normal-uppercase;
-
-        z-index: 10;
-    }
 
     //************Animazione testo**************/
 
@@ -128,7 +106,7 @@
             transform: translateX(48%);
         }
         100% {
-            transform: translateX(-70%);
+            transform: translateX(-80%);
         }
     }
 
@@ -169,8 +147,6 @@
             width: 260% !important;
             font-size:22px;
         }
-
-       
     }
 
 </style>
