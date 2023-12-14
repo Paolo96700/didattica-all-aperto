@@ -6,27 +6,27 @@
                 menus: [
                     { 
                         label: '1.Sviluppo Cognitivo e Creatività',
-                        description:  '1.Sviluppo Cognitivo e Creatività: La didattica all\'aperto favorisce lo sviluppo cognitivo dei bambini attraverso esperienze sensoriali e attività stimolanti. Le sessioni all\'aperto incoraggiano la creatività, stimolando la mente dei bambini con nuovi stimoli visivi e tattili, promuovendo la risoluzione creativa dei problemi.',  
+                        description:  'Sviluppo Cognitivo e Creatività: La didattica all\'aperto favorisce lo sviluppo cognitivo dei bambini attraverso esperienze sensoriali e attività stimolanti. Le sessioni all\'aperto incoraggiano la creatività, stimolando la mente dei bambini con nuovi stimoli visivi e tattili, promuovendo la risoluzione creativa dei problemi.',  
                         position: 0
                     },
                     { 
                         label: '2.Benessere Fisico e Mentale', 
-                        description:'2.Benessere Fisico e Mentale: Grazie all\'attività fisica all\'aperto, i bambini migliorano il loro benessere fisico e mentale. L\'aria aperta e l\'esercizio fisico contribuiscono a una migliore salute generale, riducono lo stress e promuovono una mentalità positiva, elementi fondamentali per l\'apprendimento ottimale.',
+                        description:'Benessere Fisico e Mentale: Grazie all\'attività fisica all\'aperto, i bambini migliorano il loro benessere fisico e mentale. L\'aria aperta e l\'esercizio fisico contribuiscono a una migliore salute generale, riducono lo stress e promuovono una mentalità positiva, elementi fondamentali per l\'apprendimento ottimale.',
                         position: 1
                     },
                     { 
                         label: '3.Connessione con la Natura', 
-                        description:'3.Connessione con la Natura: La didattica all\'aperto crea una connessione significativa con la natura. I bambini imparano a rispettare l\'ambiente circostante, sviluppando una consapevolezza ecologica. Questo contribuisce a formare cittadini consapevoli e responsabili del nostro pianeta.',
+                        description:'Connessione con la Natura: La didattica all\'aperto crea una connessione significativa con la natura. I bambini imparano a rispettare l\'ambiente circostante, sviluppando una consapevolezza ecologica. Questo contribuisce a formare cittadini consapevoli e responsabili del nostro pianeta.',
                         position: 2
                     },
                     { 
                         label: '4.Inclusività e Collaborazione', 
-                        description:  '4.Inclusività e Collaborazione: Gli spazi verdi offrono opportunità per attività di gruppo e cooperazione, promuovendo l\'inclusività e lo spirito di squadra. Attraverso giochi e attività all\'aperto, i bambini imparano a collaborare, a rispettare le differenze e a sviluppare competenze sociali fondamentali.',
+                        description:  'Inclusività e Collaborazione: Gli spazi verdi offrono opportunità per attività di gruppo e cooperazione, promuovendo l\'inclusività e lo spirito di squadra. Attraverso giochi e attività all\'aperto, i bambini imparano a collaborare, a rispettare le differenze e a sviluppare competenze sociali fondamentali.',
                         position: 3
                     },
                     { 
                         label: '5.Apprendimento Pratico e Memorizzazione',
-                        description: '5.Apprendimento Pratico e Memorizzazione: La didattica all\'aperto offre un\'apprendimento pratico che facilita la memorizzazione delle informazioni. Le lezioni immersive e coinvolgenti all\'aperto creano ricordi duraturi, rendendo l\'apprendimento un\'esperienza memorabile e significativa per i bambini', 
+                        description: 'Apprendimento Pratico e Memorizzazione: La didattica all\'aperto offre un\'apprendimento pratico che facilita la memorizzazione delle informazioni. Le lezioni immersive e coinvolgenti all\'aperto creano ricordi duraturi, rendendo l\'apprendimento un\'esperienza memorabile e significativa per i bambini', 
                         position: 4
                     },
 
@@ -50,10 +50,7 @@
                 <div class="text_presentation">
                     <p class="paragraph">
                         Benvenuti nel cuore della rivoluzione educativa: 
-                        <span class="highlight">
-                        DIDATTICA ALL’APERTO
-                        </span>
-                        , il nuovo brand distintivo di ABCompany dedicato alla creazione di spazi verdi pensati per scuole e aziende con una particolare attenzione ai bambini. La nostra visione unisce innovazione, apprendimento e sostenibilità, trasformando gli spazi esterni in ambienti didattici coinvolgenti. Didattica All'Aperto non è solo un marchio; è un impegno per offrire ai bambini un'educazione unica e stimolante, sviluppando il loro potenziale attraverso esperienze all'aria aperta.
+                        Didattica All'Aperto, il nuovo brand distintivo di ABCompany dedicato alla creazione di spazi verdi pensati per scuole e aziende con una particolare attenzione ai bambini. La nostra visione unisce innovazione, apprendimento e sostenibilità, trasformando gli spazi esterni in ambienti didattici coinvolgenti. Didattica All'Aperto non è solo un marchio; è un impegno per offrire ai bambini un'educazione unica e stimolante, sviluppando il loro potenziale attraverso esperienze all'aria aperta.
                     </p>
                     <p class="paragraph">
                         Con un focus particolare sull'ecologia, molti dei nostri prodotti sono realizzati con materiali sostenibili, compresa la plastica riciclata. Ci impegniamo a ridurre l'impatto ambientale, creando soluzioni didattiche che promuovono la responsabilità ecologica sin dai primi passi dell'educazione. L'utilizzo di plastica riciclata non solo garantisce la durabilità dei nostri prodotti ma contribuisce anche a un ciclo virtuoso di riciclo.
@@ -66,7 +63,7 @@
                 
                 
                 <div class="container_menu">
-                    <div class="title_presentation title_two">
+                    <div class="title_presentation title_container_menu">
                         perchè è importante per i bambini?
                     </div>
                     <div
@@ -112,42 +109,8 @@
     //SectionTwo
 
     .section_two{
-        background-image: url(../assets/images/second_background.png);
-        background-repeat: no-repeat;
-        background-size: cover;
         overflow: hidden;
-    }
-
-    .brand{
-        font-kerning: none;
-        font-size: 66px;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 17.16px;
-        white-space: nowrap;
-
-     
-        @include lightblue;
-        @include background-white;
-        @include staatliches-font-normal-uppercase;
-    }
-
-    //************Animazione testo**************/
-
-    .brand_text{
-        white-space: nowrap; 
-        overflow: hidden; 
-        animation: moveText 18s linear infinite; 
-    }
-
-
-    @keyframes moveText {
-        0% {
-            transform: translateX(65%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
+        padding-top: 150px;
     }
 
     .content{
@@ -159,113 +122,85 @@
 
     .presentation{
         width: 100%;
-
-        margin-top: 100px; 
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        @include white;
 
         @include flex-column-center;
         .title_presentation{
             text-align: center;
-            flex-shrink: 0;
+            font-size: 110px;
 
-            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-            font-size: 160px;
-            font-weight: 400;
-            line-height: 98%;
-
-            margin-bottom: 150px; 
-            
-            @include staatliches-font-normal-uppercase;
-            @include white;
+            margin-bottom: 80px; 
+            font-family: Staatliches;    
         }
 
         .text_presentation{
-            width: 45%;
+            width: 80%;
             flex-shrink: 0;
 
             text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
             font-family: Tauri;
-            font-size: 28px;
-            @include font-normal-weight-line;
-
-            .highlight{
-                font-family: Teko;
-                font-size: 35px;
-                font-weight: 600;
-                line-height: 44px;
-                margin-left: 12px;
-            }
-
-            margin-bottom:150px;
-            @include white;
-            
+            font-size: 20px;
+            line-height: 44px;
+                      
             .paragraph{
                 margin-bottom: 40px;
             }
         }
-
     }
 
-    // Menù Option
+
+
+    // PERCHE E IMPORTANTE PER I BAMBINI?
 
     .container_menu{
         width: 100%;
-
-        .title_two{
-            padding-inline: 200px; 
+        
+        .title_container_menu{
+            padding: 200px 200px 100px 200px; 
             text-align: left;
-            margin-top: 250px;
-            margin-bottom: 250px;
         }
-
         .div_line{
+            cursor: pointer;
             width: 100%;
-            
             .sub_div_line{
-                cursor: pointer;
                 display: flex;
                 flex-direction: column;
-
                 .menu_label{
                     display: flex;
                     align-items: center;
-
                     .line{
                         border: 5px solid #FFF;
                         flex-shrink: 0; 
                         stroke-width: 5px;
                         transition: width 0.6s ease;
-                        @include white;
                     }
-                    
                     .rhombus {
-                        width: 1.5%;
+                        width: 25px;
                         aspect-ratio: 1;
                         
                         transform: rotate(45deg);
-                        color: white;
                         @include background-white;
                         transition:  width 0.6s ease;
                     }
 
                     .title_menu{
                         font-family: Sintony;
-                        font-size: 50px;
+                        font-size: 35px;
+                        text-transform: uppercase;
                         
                         font-weight: 700;
                         line-height: 98%; 
                     
-                        margin-left:85px;
-
-                        @include normal-uppercase;
-                        @include white;
+                        padding-left:85px;
                     }
 
                 }
             }
         }
         .div_line_two{
-            margin-bottom:300px;
+            padding-bottom:200px;
+            transition: padding-bottom 0.3s ease;
         }
     }
 
@@ -293,8 +228,16 @@
 
     // Hover Line - si allunga nel momento ci si va sopra con il mouse
 
-    .sub_div_line:hover .line {
-        width: 35%;
+    .div_line:hover .line {
+        width: 40%;
+    }
+
+    // Hover Line - il margine tra i menù selezionato e quello sottostante
+    // diminuisce fino al momento in cui non si chiude 
+
+    .div_line_two:hover{
+        transition: 0.6s;
+        padding-bottom: 30px;
     }
 
     //Menù Option - Line
@@ -302,50 +245,56 @@
     .menu {
         width: 0;
         height: 0;
-        flex-shrink: 0;
-        
         @include flex-center;
         @include gradient-menu;
         opacity: 0;
         
         overflow: hidden;
-        transition: opacity 0.8s ease, width 0.8s ease, height 0.8s ease;
-
+        transition: opacity 0.8s ease, width 0.8s ease, height 0.3s ease;
+        
         .menu_img{
             width: 40%;
-            flex-shrink: 0;
+            .img_menu{
+                width: 100%;
+            }
         }
-
+        
         .menu_description{
             width: 60%;
             flex-shrink: 0;
             background: rgba(19, 48, 74, 0.39);
-
-            padding: 60px;
-
-            .description_menu{
-                width: 85%;
-                flex-shrink: 0;
-                
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-                font-size: 28px;
-                font-weight: 400;
-                line-height: 44px;
-
-                padding-top: 50px;
-                padding-bottom:50px;
             
+            padding: 40px;
+            
+            .description_menu{
+                opacity: 0;
+                transition: opacity 1s ease 1s;
                 @include normal-tauri;
-                @include white
+                @include white;
             }
         }
 
     }
 
-    .sub_div_line:hover .menu {
+    // Hover Line - apertura del menù
+
+    .div_line:hover .menu {
         opacity: 1;
         width: 100%;
-        height: 666px;
+        height: 450px;
+    }
+
+    // Hover Line - comparsa della descrizione del menù
+
+    .div_line:hover .description_menu {
+        transition: opacity 1s ease 1s;
+        opacity: 1;
+
+        width: 90%;
+                
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        font-size: 22px;
+        line-height: 44px;
     }
 
 
@@ -354,25 +303,28 @@
     @media only screen and (max-width: 1024px) {
         
         // IL BRAND
-
-        .title_presentation{
-            font-size: 110px !important;
+        .title{
+            width: 100% !important;
         }
 
-        .title_two{
+        .title_presentation{
+            font-size: 100px !important;
+        }
+
+        .title_container_menu{
             width: 80%;
             padding-left: 120px !important;
             margin-top: 40px !important;
             margin-bottom: 150px !important;
         }
         .text_presentation{
-            font-size: 24px !important;
+            font-size: 20px !important;
         }
 
         //PERCHE E IMPORTANTE PER I BAMBINI?
 
         .div_line{
-            margin-bottom:100px !important;
+           padding-bottom:100px !important;
         }
 
         .line{
@@ -380,15 +332,21 @@
         }
 
         .rhombus{
-            width: 15px;
-            height: 15px;
+            width: 15px !important;
+            height: 15px !important;
             margin-left: -10px;
         }
 
-        .sub_div_line:hover .menu {
+        .div_line:hover .menu {
             opacity: 1;
+            margin-top: 20px;
             width: 100%;
             height: 266px;
+        }
+
+        .div_line_two:hover{
+            transition: 0.6s;
+            padding-bottom: 20px !important;
         }
 
         .title_menu{
@@ -431,12 +389,9 @@
         .text_presentation{
             width: 70% !important;
             font-size: 18px !important;
-            .highlight{
-                font-size: 22px !important;
-            }
         }
 
-        .title_two{
+        .title_container_menu{
             width: 90%;
             padding-left: 65px !important;
             margin-top: 40px !important;
@@ -446,14 +401,15 @@
         //PERCHE E IMPORTANTE PER I BAMBINI?
 
         .div_line{
-            margin-bottom:100px !important;
+            padding-bottom:70px !important;
+            margin-bottom: 30px !important;
             .line{
                 border: 3px solid #FFF !important; 
             }
             .rhombus{
-                width: 2% !important;
-                height: 2% !important;
-                margin-left: -10px;
+                width: 12px !important;
+                height: 12px !important;
+                margin-left: -5px;
             }
             .title_menu{
                 font-size: 22px !important;
@@ -483,20 +439,23 @@
 
         // Hover Line - si allunga nel momento ci si va sopra con il mouse
 
-        .sub_div_line:hover .line {
+        .div_line:hover .line {
             width: 32%;
         }
 
-        .sub_div_line:hover .menu {
+        .div_line:hover .menu {
             opacity: 1;
             width: 100%;
             height: 266px;
         }
 
-       
+        .div_line_two:hover{
+            transition: 0.6s;
+            padding-bottom: 0px !important;
+        }
 
         .menu_img{
-            width: 280px !important;
+            width: 50% !important;
             height: 80% !important;
             .img_menu{
                 width: 100% !important;
@@ -504,9 +463,8 @@
             }
         } 
         
-
         .menu_description{
-            width: 80%;
+            width: 50% !important;
             height: 100% !important;
             padding: 40px !important;
             display: flex;
@@ -517,7 +475,5 @@
                 line-height: 30px !important;
             }
         }
-        
-    
     }
 </style>

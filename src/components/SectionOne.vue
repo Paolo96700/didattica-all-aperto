@@ -7,14 +7,14 @@
         <div class="container_one">
             <img src="../assets/images/logo.png" alt="" class="logo">
             <img src="../assets/images/title.png" alt="" class="title">
-            <!-- <img src="../assets/images/bimbo.png" alt="" class="image_child"> -->
             <div class="sub_title_jumbo">
         
                 esplora il futuro dell’apprendimento
             
             </div>
         </div>
-        <img src="../assets/images/triangle_lightblue_two.png" alt="" class="triangle">
+
+        <img src="../assets/images/triangle.png" alt="" class="triangle">
         <div class="brand">
             <div class="brand_text">
                 <span>
@@ -53,7 +53,6 @@
             .title{
                 width: 80%;
                 aspect-ratio: 3.4;
-                flex-shrink: 0;
             }
             .sub_title_jumbo{
                 width: 30%;
@@ -65,29 +64,33 @@
                 align-self: self-end;
                 font-family: Staatliches;
 
-                margin-top:250px;
+                padding-top: 250px;
             }
         }
+
         .triangle{
-            width: 170%;
-            padding:0;
-            margin: 0;
+            width: 110%;
+            margin-bottom: -40px;
         }
+
+        
         .brand{
-            width: 250%;
-            font-size: 50px;
+            width: 200%;
+            font-size: 30px;
             letter-spacing: 17px;
             transform: rotate(13deg);
 
             font-family: Staatliches;
-            font-style: normal;
             text-transform: uppercase;
 
-            margin: -50px 0px -60px -100px;
+            position: absolute;
+            top: 1400px;
+            left: -60px;
 
-            @include lightblue;
+            @include dark-green;
             @include background-white;
-            z-index: 10;
+            z-index: 12;
+
         }
     }
 
@@ -103,7 +106,7 @@
 
     @keyframes moveText {
         0% {
-            transform: translateX(48%);
+            transform: translateX(55%);
         }
         100% {
             transform: translateX(-80%);
@@ -113,21 +116,36 @@
     //******************************************/
 
 
-    //Media Query
-    @media only screen and (max-width: 1024px) {
+    // Media Query
+    @media (max-width: 1024px) {
 
-            .sub_title_jumbo{
-                margin-top:150px;
-                font-size: 40px;
-            }
+        .logo{
+            width: 20% !important;
+        }
 
-            .brand{
-                font-size:40px
-            }
+        .title{
+            padding-top: 90px !important;
+            width: 95% !important;
+        }
 
-            @keyframes moveText {
+        .sub_title_jumbo{
+            margin: 0 !important;
+            padding-top: 110px !important;
+            font-size: 35px !important;
+        }
+
+        .triangle{
+            margin-bottom: -10px !important;
+        }
+
+        .brand{
+            width: 220% !important;
+            top: 1120px !important;
+        }
+
+        @keyframes moveText {
             0% {
-                transform: translateX(100%);
+                transform: translateX(60%);
             }
             100% {
                 transform: translateX(-100%);
@@ -135,18 +153,56 @@
         }
     }
 
-    //Media Query
-    @media only screen and (max-width: 864px) {
+    @media (max-width: 864px) {
+
+        .title{
+            padding-top: 90px !important;
+            width: 100% !important;
+        }
 
         .sub_title_jumbo{
-            margin-top:150px;
-            font-size: 30px;
+            font-size: 30px !important;
         }
 
         .brand{
-            width: 260% !important;
+            width: 295% !important;
+            top: 1000px !important;
             font-size:22px;
         }
     }
+
+    @media (max-width: 480px) {
+
+        .logo{
+            width: 35% !important;
+        }
+
+        .title{
+            padding-top: 90px !important;
+            width: 110% !important;
+        }
+
+        .sub_title_jumbo{
+            width: 70% !important;
+            margin-right: -20px !important;
+            font-size: 20px !important;
+        }
+
+        .brand{
+            width: 500% !important;
+            top: 820px !important;
+            font-size:20px!important;
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateX(22%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    }
+
 
 </style>

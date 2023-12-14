@@ -25,13 +25,15 @@ body{
     width: 100%;
     margin: auto;
     position: relative;
-    max-width: 2200px;
-    @include background-dark-blue;
+    max-width: 1700px;
+    @include background-dark-green;
     // border: 10px solid #3B7FBE;
+    overflow: hidden;
 }
 
 .footer_container{
     width: 100%;
+    max-width: 1700px;
     margin: auto;
 }
 
@@ -47,3 +49,11 @@ body{
             font-size:40px
         }
     }
+
+
+.box_shadow{
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}
+.text_shadow{
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}

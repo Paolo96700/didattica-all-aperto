@@ -25,7 +25,9 @@
   <div class="container">
     <SectionOne />
     <SectionTwo />
-    <SectionThree/>
+  </div>
+  <SectionThree/>
+  <div class="container">
     <SectionFour/>
   </div>
   <div class="footer_container">

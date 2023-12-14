@@ -5,23 +5,21 @@
 <template>
   <section class="section_four">
     <div class="part_section_one">
-        <div class="title_image">
-            showroom
-        </div>
-        <img src="../assets/images/eclipse.png" alt="" class="eclipse">
-        <img src="../assets/images/eclipse.png" alt="" class="eclipse2">
+       
+        <img src="../assets/images/eclipse.png" alt="" class="eclipse eclipse1">
+        <img src="../assets/images/eclipse.png" alt="" class="eclipse eclipse2">
     
         <p class="sub_title">tavoli e panche</p>
     </div>
     <div class="part_section_two">
-        <img src="../assets/images/eclipse.png" alt="" class="eclipse3">
-        <img src="../assets/images/eclipse.png" alt="" class="eclipse4">
-        <p class="sub_title sub_part_two">lavagne</p>
+        <img src="../assets/images/eclipse.png" alt="" class="eclipse eclipse3">
+        <img src="../assets/images/eclipse.png" alt="" class="eclipse eclipse4">
+        <p class="sub_title">lavagne</p>
     </div>
     <div class="part_section_three">
-        <img src="../assets/images/eclipse.png" alt="" class="eclipse5">
-        <p class="sub_title sub_part_three">tribunette</p>
-        <img src="../assets/images/triangle_dark_blue.png" alt="" class="triangle">
+        <img src="../assets/images/eclipse.png" alt="" class="eclipse eclipse5">
+        <p class="sub_title five_sub_title">tribunette</p>
+        <img src="../assets/images/triangle.png" alt="" class="triangle">
     </div>
 
    
@@ -79,7 +77,7 @@
             invia
         </button>
 
-        <div class="title_contact title_contact_principal">
+        <div class="title_info title_contact_principal">
             Contattaci
         </div>
 
@@ -180,65 +178,14 @@
 
 .section_four{
     z-index:10;
+    overflow: hidden;
 }
  
 // Section Four - Part One
 
-.part_section_one{
-    width: 100%;
-    aspect-ratio: 1.38;
-
-    flex-shrink: 0;
-    color: #FFF;
-    font-style: normal;
-    font-weight: 400;
-    text-transform: uppercase;
-    
-
-    background-image: url(../assets/images/back1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 26px 43px 115.3px 0px rgba(0, 0, 0, 0.81) inset;
-    border-bottom: 10px solid white;
-    position: relative;
-    overflow: hidden;
-
-    .title_image{
-        width: 100%;
-        aspect-ratio: 6;
-        
-        text-shadow: 10px 10px 30px #000;
-        font-family: Staatliches;
-        font-size: 160px;
-
-        background: rgba(0, 0, 0, 0.28);
-        backdrop-filter: blur(3.60px);
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        position: absolute;
-        top: 285px;
-
-        z-index: 10;
-    }
-    .eclipse{
-        width: 41px;
-        height: 41px;
-        flex-shrink: 0;
-        position: absolute;
-        top: 895px;
-        left: 220px;
-    }
-    .eclipse2{
-        width: 41px;
-        height: 41px;
-        flex-shrink: 0;
-        position: absolute;
-        top: 1100px;
-        left: 1050px;
-    }
+.eclipse{
+    width: 31px;
+    height: 31px;
 }
 
 .sub_title{
@@ -246,54 +193,65 @@
 
     text-shadow: 5px 5px 12px #000;
     font-family: Sansita;
-    font-size: 74px;
+    font-size: 54px;
     text-transform: uppercase;
     
     position: absolute;
-    bottom:-40px;
-    right:140px;
+    bottom:20px;
+    right:30px;
 }
 
+.part_section_one{
+    width: 100%;
+    aspect-ratio: 1.68;
+    
+    background-image: url(../assets/images/back1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 26px 43px 115.3px 0px rgba(0, 0, 0, 0.81) inset;
+    border-bottom: 5px solid white;
+    position: relative;
 
+    @include white;
 
+  
+    .eclipse1{
+        position: absolute;
+        top: 750px;
+        left: 200px;
+    }
+    .eclipse2{
+        position: absolute;
+        top: 740px;
+        left: 760px;
+    }
+}
 
 // Section Four - Part Two
 
 .part_section_two{
     width: 100%;
-    aspect-ratio: 2.25;
-    flex-shrink: 0;
+    aspect-ratio: 2.25;;
     background-image: url(../assets/images/back2.png);
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 26px 43px 115.3px 0px rgba(0, 0, 0, 0.81) inset;
     position: relative;
     
-    border-bottom: 10px solid white;
+    border-bottom: 5px solid white;
 
     position: relative;
-    overflow: hidden;
     
     .eclipse3{
-        width: 41px;
-        height: 41px;
-        flex-shrink: 0;
         position: absolute;
-        top: 275px;
-        left: 450px;
+        top: 205px;
+        left: 300px;
     }
 
     .eclipse4{
-        width: 41px;
-        height: 41px;
-        flex-shrink: 0;
         position: absolute;
-        top: 200px;
-        left: 920px;
-    }
-    
-    .sub_part_two{  
-        right: 360px;
+        top: 160px;
+        left: 710px;
     }
 }
 
@@ -302,30 +260,23 @@
 .part_section_three{
     width: 100%;
     aspect-ratio: 1.8;
-    flex-shrink: 0;
     background-image: url(../assets/images/back3.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    overflow: hidden;
     box-shadow: 26px 43px 115.3px 0px rgba(0, 0, 0, 0.81) inset;
 
     position: relative;
 
     .eclipse5{
-        width: 41px;
-        height: 41px;
-        flex-shrink: 0;
         position: absolute;
-        top: 600px;
-        left: 940px;
-    }
-    .sub_part_three{
-        bottom: 110px;
-        right: 270px;
+        top: 400px;
+        left: 740px;
     }
 
-
+    .five_sub_title{
+        bottom: 80px;
+    }
 }
 
 .triangle{
@@ -340,41 +291,34 @@
 // Section Four - Container Contact
 
 .info{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 320px;
+    .title_info{
+        width: 65%;
+
+        text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.35);
+        font-family: Staatliches;
+        font-size: 110px;
+       
+        padding-left: 34px;
+
+        @include white
+    }
 }
 
-.title_info{
-    width: 65%;
-    flex-shrink: 0;
 
-    text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.35);
-    font-family: Staatliches;
-    font-size: 160px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 98.125%; 
-    text-transform: uppercase;
-
-    margin-top: 180px;
-    margin-left: 34px;
-
-    @include white
-}
 
 .description_info{
-    width: 70%;
-    flex-shrink: 0;
+    width: 80%;
 
     font-family: Tauri;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 98.125%;
-
-    margin-top: 180px;
+    font-size: 20px;
+    padding-top: 120px;
+    padding-left: 60px;
 
     @include white
 }
@@ -383,29 +327,29 @@
 //*************************** input ******************************/
 
 .container_input{
-    width: 65%;
+    width: 70%;
     margin-top: 70px;
-    margin-right: 90px;
     position: relative;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between
+    justify-content: space-around;
+
 }
 
 // Imput - Container Input
 
 .input{ 
     .inputGroup {
-        margin: 1em 0 1em 0;
-        width: 90%;
+        margin: 1em 0em 1em 0;
+        width: 80%;
 
         position: relative;
     }  
 
     .inputGroup input {
-        padding: 1.0em;
-        padding-inline: 2em;
+        padding: 0.8em;
+        padding-inline: 1.5em;
         outline: none;
         border: 5px solid #FFF;
         background-color: transparent;
@@ -414,8 +358,6 @@
 
         font-family: Tauri;
         font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
 
         @include white
     }
@@ -423,13 +365,11 @@
     .inputGroup label {
         font-size: 100%;
         position: absolute;
-        top:25px;
+        top:22px;
         left: 20px;
         font-size: 20px;
         padding-inline:0.5em;
         font-family: Staatliches;
-        font-weight: 400;
-
         margin-left: 0.5em;
         pointer-events: none;
 
@@ -443,7 +383,7 @@
         top:5px;
         margin: 0em;
         margin-left: 1.2em;
-        @include background-dark-blue;
+        @include background-dark-green;
     }
 
     .inputGroup :is(input:focus, input:valid) {
@@ -458,13 +398,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-
     font-family: Tauri;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 98%;
 
     margin-top: 70px;
 
@@ -493,10 +428,6 @@
 
     font-family: Tajawal;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 98%;
-
     margin-top: 70px;
     margin-bottom: 20px;
 
@@ -564,7 +495,6 @@
 
 
 .send{
-    flex-shrink: 0;
     border-radius: 106px;
 
     box-shadow: 4px 6px 4px 0px rgba(0, 0, 0, 0.25);
@@ -572,40 +502,35 @@
     text-align: center;
     font-family: Staatliches;
     font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 44px;
     text-transform: uppercase;
 
     margin-top:20px;
 
-    padding: 10px 80px 10px 80px;
+    padding: 8px 100px 8px 100px;
 
     @include white;
     @include background-button;
 }
-  
+
+.title_contact_principal{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 450px;
+    padding-left: 0 !important;
+}
 
 .title_contact{
     width: 100%;
-    flex-shrink: 0;
 
     text-shadow: 10px 10px 30px rgba(0, 0, 0, 0.50);
     font-family: Staatliches;
-    font-size: 160px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 98%;
     text-transform: uppercase;
-
-    @include white;
 
     display: flex;
     justify-content: center;
-}
 
-.title_contact_principal{
-    margin-top: 400px;
+    @include white;
 }
 
 .container_contact{
@@ -614,12 +539,11 @@
     justify-content: center;
     gap: 50px;
 
-    margin-top: 180px;
+    padding-top: 100px;
   
     margin-bottom: 600px;
     .container_contact_one{
         width: 643px;
-        flex-shrink: 0; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -631,14 +555,13 @@
 
         margin-bottom: 20px;
 
-        @include background-dark-blue-contact;
+        @include background-dark-green-contact;
     }
 
 
     .sub_container_contact_one{
         width: 806px;
-        height: 427px;
-        flex-shrink: 0;
+        aspect-ratio: 1.80;
         border-radius: 49px;
         border: 5px solid #FFF;
     
@@ -648,12 +571,11 @@
         flex-direction: column;
         align-items: center;
 
-        @include background-dark-blue-contact;
+        @include background-dark-green-contact;
     }
     .sub_container_contact_two{
         width: 806px;
         aspect-ratio: 1.5;
-        flex-shrink: 0;
 
         border-radius: 49px;
         border: 5px solid #FFF;
@@ -665,7 +587,7 @@
         flex-direction: column;
         align-items: center;
 
-        @include background-dark-blue-contact;
+        @include background-dark-green-contact;
     }
 }
 
@@ -678,18 +600,17 @@
 
 .container_input_two{ 
     width: 100%;
-    margin-top: 50px;
+    padding-top:30px;
 
     @include flex-column-center
 }
 
 .input_contact{
-   margin-right: 45px;
-    margin-top: 20px;
+    padding-bottom: 10px;
 }
 
 .inputGroup input:is(input:focus, input:valid)~.label_contact{
-    @include background-dark-blue-contact
+    @include background-dark-green-contact
 }
 
 .text_contact_two{
@@ -730,8 +651,6 @@
     width: 100%;
     font-family: Tauri;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
     resize: none;
 
     @include white;
@@ -745,7 +664,6 @@
     font-size: 20px;
     padding-inline: 0.5em;
     font-family: Staatliches;
-    font-weight: 400;
     margin-left: 0.5em;
     pointer-events: none;
     transition: all 0.3s ease;
@@ -764,7 +682,7 @@
     top: 5px;
     margin: 0em;
     margin-left: 1.2em;
-    @include background-dark-blue-contact;
+    @include background-dark-green-contact;
 }
 
 //*******************************************************************/
@@ -792,9 +710,7 @@
 .subtitle{
     font-family: Staatliches;
     font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 98%; 
+     
     text-transform: uppercase;
 
     margin-top: 15px;
@@ -806,10 +722,7 @@
 .text_info{
     font-family: Tauri;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 98%; 
-
+     
     @include white;
 }
 
@@ -832,9 +745,7 @@
     .sub_map{
         width: 90%;
         aspect-ratio: 1.8 !important;
-        flex-shrink: 0;
         border-radius: 23px;
-        border: 6px solid #3074CB;
         background: url(<path-to-image>), lightgray 50% / cover no-repeat;
         .map{
             width: 100%;
@@ -844,15 +755,9 @@
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
         
     // SHOWROOM
-
-    .title_image{
-        top: 165px !important;
-        font-size: 100px !important;
-        aspect-ratio: 7.5 !important;
-    }
 
     .sub_title{
         right: 55px !important;
@@ -870,13 +775,8 @@
     .eclipse2{
         width: 20px !important;
         height: 20px !important;
-        top: 600px !important;
-        left: 580px !important;
-    }
-
-    .sub_part_two{
-        bottom: 5px !important;
-        right: 170px !important;
+        top: 550px !important;
+        left: 560px !important;
     }
 
     .eclipse3{
@@ -900,21 +800,25 @@
         left: 480px !important;
     }
 
-    .sub_part_three{
-        bottom: 90px !important;
-        right: 120px !important;
+    .five_sub_title{
+        bottom: 70px !important;
     }
 
-    
+    // OFFRIAMO SOLUZIONI SU MISURA
+
+    .info{
+        margin-top: 150px;
+    }
+
 
     .title_info{
-        width: 70%;
+        width: 82% !important;
         font-size: 100px !important;
     }
 
     .description_info{
         width: 90%;
-        font-size: 22px !important;
+        font-size: 20px !important;
         padding-left: 50px !important;
     }
 
@@ -926,27 +830,15 @@
         justify-content: center;
     }
 
-    
-    .title_contact{
-        font-size: 100px !important;
-    }
-
-    .title_contact_one{
-        margin-top: 40px;
-        font-size: 50px !important;
+    .title_contact_principal{
+        margin-top: 200px;
     }
        
 }
 
     @media only screen and (max-width: 864px) {
         
-        // SHOWROOM
-
-    .title_image{
-        top: 125px !important;
-        font-size: 80px !important;
-        aspect-ratio: 7.5 !important;
-    }
+    // SHOWROOM
 
     .sub_title{
         right: 55px !important;
@@ -964,8 +856,8 @@
     .eclipse2{
         width: 20px !important;
         height: 20px !important;
-        top: 450px !important;
-        left: 420px !important;
+        top: 400px !important;
+        left: 400px !important;
     }
      
     .sub_part_two{
@@ -987,9 +879,8 @@
         left: 330px !important;
     }
 
-    .sub_part_three{
-        bottom: 80px !important;
-        right: 120px !important;
+    .five_sub_title{
+        bottom:60px !important;
     }
 
     .eclipse5{
@@ -999,6 +890,7 @@
         left: 410px !important;
     }
 
+    // OFFRIAMO SOLUZIONI SU MISURA
 
     .title_info{
         width: 80%;
@@ -1008,7 +900,6 @@
     .description_info{
         width: 95%;
         font-size: 18px !important;
-        padding-left: 10px !important;
     }
 
     .container_input{
@@ -1026,6 +917,10 @@
     
     .title_contact{
         font-size: 85px !important;
+    }
+
+    .container_contact{
+        margin-bottom: 300px !important;
     }
 
     .container_contact_one{
