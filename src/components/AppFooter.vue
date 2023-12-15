@@ -194,10 +194,10 @@
         .sub_container_footer_two{
             
             .title_footer{
-                font-size: 14px !important;
+                font-size: 13px !important;
             }
             .sub_title_footer{
-                font-size: 9px !important;
+                font-size: 8px !important;
             }
 
         }
