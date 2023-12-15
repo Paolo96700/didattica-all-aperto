@@ -216,12 +216,62 @@
         .card{
             margin: 0px 0px 30px;
         }
-       
+        
+        .title_image{
+            font-size: 100px !important;
+            top: -100px !important;
+        }
     }
 
-    .title_image{
-        font-size: 100px !important;
-        top: -100px !important;
+    
+    @media (max-width: 480px) {
+        
+        // CARD
+
+        .card{ 
+            margin: 0px 0px 30px;
+        }
+
+        .title_card{
+            font-size: 32px !important;
+            padding: 0px 0px 15px 10px !important;
+        }
+
+        .title_card_two{
+          line-height: normal;
+        }
+        .description_card{
+            font-size: 14px !important;
+            line-height: 25px;
+        }
+
+        .description_type_one{
+            padding-bottom: 50px;
+        }
+
+        .title_card_two{
+            width: 78% !important;
+            padding: 0 !important;
+            padding-left: 25px!important;
+        }
+
+        .highlight_number{
+            font-size: 100px !important;
+            padding: 0 !important;
+        }
+
+        .part_title_card_three{
+            width: 75% !important;
+        }
+        .img_trees{
+            width: 55px !important;
+        }
+        
+        .title_image{
+            font-size: 55px !important;
+            top: -100px !important;
+        }
     }
+    
 
 </style>

@@ -476,4 +476,109 @@
             }
         }
     }
+
+    //Media Query - 864px
+
+    @media only screen and (max-width: 480px) {
+        
+        // IL BRAND
+        .title_presentation{
+            width: 90%;
+            font-size: 50px !important;
+            margin-bottom: 55px !important;
+        }
+        .text_presentation{
+            width: 80% !important;
+            font-size: 12px !important;
+            line-height: 28px !important;
+        }
+
+        .title_container_menu{
+            width: 100%;
+            font-size: 50px !important;
+            padding-left: 25px !important;
+            margin-top: 0px !important;
+            margin-bottom: 50px !important;
+            padding-top: 100px!important;
+        }
+        
+        //PERCHE E IMPORTANTE PER I BAMBINI?
+
+        .div_line{
+            padding-bottom:70px !important;
+            margin-bottom: 30px !important;
+            .line{
+                border: 3px solid #FFF !important; 
+            }
+            .rhombus{
+                width: 12px !important;
+                height: 12px !important;
+                margin-left: -5px;
+            }
+            .title_menu{
+                font-size: 18px !important;
+                margin-left: -15px !important;
+            }
+        }
+
+        .sub_div_line_0 .line {
+            width: 5%; 
+        }
+
+        .sub_div_line_1 .line {
+            width: 10%; 
+        }
+
+        .sub_div_line_2 .line {
+            width: 15%; 
+        }
+
+        .sub_div_line_3 .line {
+            width: 20%; 
+        }
+
+        .sub_div_line_4 .line {
+            width: 25%; 
+        }
+
+        // Hover Line - si allunga nel momento ci si va sopra con il mouse
+
+        .div_line:hover .line {
+            width: 40%;
+        }
+
+        .div_line:hover .menu {
+            opacity: 1;
+            width: 100%;
+            height: 266px;
+        }
+
+        .div_line_two:hover{
+            transition: 0.6s;
+            padding-bottom: 0px !important;
+        }
+
+        .menu_img{
+            width: 45% !important;
+            height: 40% !important;
+            .img_menu{
+                width: 100% !important;
+                height: 100% !important;
+            }
+        } 
+        
+        .menu_description{
+            width: 55% !important;
+            height: 100% !important;
+            padding-right: 10px !important;
+            display: flex;
+            align-items: center;
+            .description_menu{
+                padding: 0 !important;
+                font-size: 14px !important;
+                line-height: 20px !important;
+                font-size: 12px !important;
+            }
+        }
+    }
 </style>

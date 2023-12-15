@@ -175,8 +175,33 @@
 
         }
         
-        
+        .span_footer{
+            font-size: 6px !important;
+        }
+    }
 
+    @media only screen and (max-width: 480px) {
+
+        .logo_footer{
+            margin-left: 20px;
+        }
+
+        .sub_container_footer{
+            margin: 0px 0px 0px 50px;
+        }
+
+
+        .sub_container_footer_two{
+            
+            .title_footer{
+                font-size: 14px !important;
+            }
+            .sub_title_footer{
+                font-size: 9px !important;
+            }
+
+        }
+        
         .span_footer{
             font-size: 6px !important;
         }

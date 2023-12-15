@@ -1002,5 +1002,197 @@
     }
 }
 
+@media only screen and (max-width: 480px) {
+        
+    // SHOWROOM
+
+    .part_section_one{
+        width: 100% !important;
+        aspect-ratio: 1.58 !important;
+    }
+
+    .sub_title{
+        right: 20px !important;
+        bottom: 5px !important;
+        font-size: 25px !important;
+    }
+
+    .eclipse{
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    .eclipse1{
+        top: 180px !important;
+        left: 50px !important;
+    }
+
+    .eclipse2{
+        top: 180px !important;
+        left: 300px !important;
+    }
+        
+    .sub_part_two{
+        bottom: 5px !important;
+        right: 160px !important;
+    }
+    
+    .eclipse3{
+        top: 60px !important;
+        left: 90px !important;
+    }
+
+    .eclipse4{
+        top: 70px !important;
+        left: 300px !important;
+    }
+
+    .five_sub_title{
+        bottom:30px !important;
+    }
+
+    .eclipse5{
+        top: 120px !important;
+        left: 210px !important;
+    }
+
+    // OFFRIAMO SOLUZIONI SU MISURA
+
+    .title_info{
+        width: 95% !important;
+        font-size: 52px !important;
+    }
+
+    .description_info{
+        width: 90%;
+        font-size: 15px !important;
+        padding: 30px!important;
+    }
+
+    .type_contact{
+        width: 95%;
+        font-size: 12px;
+        .text_contact{
+            margin-right: 40px;
+        }
+
+    }
+
+    .accept_conditions{
+        padding: 0px 0px 0px 40px!important;
+        font-size: 15px !important;
+    }
+
+
+    .container_input{
+        margin-right: 30px;
+        width: 50%;
+    }
+
+    .container_input{
+        justify-content: center;
+    }
+
+    .send{
+        margin-left:15px;
+        padding: 8px 55px 4px 55px;
+        font-size: 40px;
+    }
+    
+    .title_contact_principal{
+        margin-top: 90px;
+        padding: 0;
+    }
+
+    .container_contact{
+        margin-bottom: 200px !important;
+    }
+
+    .container_contact_one{
+        width: 90% !important;
+    }
+
+    .title_contact_one{
+        margin-top: 40px;
+        font-size: 30px !important;
+    }
+
+    .input_contact{
+        margin-right: 10px;
+    }
+
+    .inputGroup{
+        width: 90% !important;
+    }
+    .input .inputGroup input{
+        padding: 1em !important;
+    }
+
+    .prefer_contact{
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .inputGroup textarea{
+        padding: 1.1em !important;
+    }
+    
+    .container_contact_two{
+        width: 90% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub_container_contact_one{
+        width: 90% !important;
+        padding: 25px;
+        .subtitle{
+            font-size: 18px !important;
+        }
+        .sub_one{
+            width: 60% !important;
+            margin: 0;
+        }
+        .text_info{
+            font-size: 18px !important;
+        }
+        .sub_two{
+            margin: 0 !important;
+            margin-top: 140px !important;
+            width: 40%;
+            .container_social{
+                margin-top: 30px;
+                .container_social img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+
+    .sub_container_contact_two{
+        width: 100% !important;
+        aspect-ratio: 1.18;
+        .subtitle{
+            font-size: 18px !important;
+        }
+        .text_info{
+            font-size: 10px !important;
+        }
+        .sub_three{
+            width: 90%;
+        }
+        .row_two{
+            margin-left: 130px !important;
+        }
+        .sub_map{
+            width: 88% !important;
+            aspect-ratio: 1.65 !important;
+        }
+    }
+}
+
 
 </style>
